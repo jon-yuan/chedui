@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/nav_siji"
+            android:icon="@drawable/icon_car_siji"
+            android:title="@string/my_siji" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/icon_order"
+            android:title="@string/my_order" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/icon_tuiguang"
+            android:title="@string/erweima_tuiguang" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/icon_setting"
+            android:title="@string/setting"/>
+
+</menu>

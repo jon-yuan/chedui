@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorPrimaryDark_230">#E63F51B5</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#333</color>
+
+    <color name="white">#fff</color>
+    <color name="gray">#eeeeee</color>
+    <color name="black">#000</color>
+    <color name="green">#00ff00</color>
+    <color name="red">#ff0000</color>
+    <color name="red_230">#E6FF0000</color>
+    <color name="hintcolor">#DDDDDD</color>
+    <color name="touming">#00000000</color>
+    <color name="blue">#FF2D8BEE</color>
+
+
+
+    <color name="black_333">#333</color>
+    <color name="black_666">#666</color>
+    <color name="black_DDD">#dddddd</color>
+    <color name="black_98">#FF989898</color>
+    <color name="bantouming">#55000000</color>
+    <color name="msg_yundanhao_blue">#FF303f9f</color>
+    <color name="main_gray_line">#FFE5E5E5</color>
+    <color name="main_gray_line1">#FFF4F6F8</color>
+    <color name="login_btn_color">#FF2F3E5F</color>
+    <color name="color_btn_blue">#FF2D8BEE</color>
+    <color name="color_btn_red">#FFFF6D7B</color>
+</resources>
