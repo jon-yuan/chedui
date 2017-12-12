@@ -1,7 +1,12 @@
 package com.babuwyt.daili.ui.activity;
 
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,10 +26,13 @@ import com.babuwyt.daili.base.BaseActivity;
 import com.babuwyt.daili.base.SessionManager;
 import com.babuwyt.daili.bean.MainBean;
 import com.babuwyt.daili.bean.NumBean;
+import com.babuwyt.daili.bean.VersionBean;
 import com.babuwyt.daili.entity.MainEntity;
+import com.babuwyt.daili.entity.VersionEntity;
 import com.babuwyt.daili.finals.BaseURL;
 import com.babuwyt.daili.inteface.MainAdapterCallBack;
 import com.babuwyt.daili.inteface.MyCallBack;
+import com.babuwyt.daili.inteface.MyProgressCallBack;
 import com.babuwyt.daili.utils.util.UHelper;
 import com.babuwyt.daili.utils.util.XUtil;
 import com.google.gson.Gson;
@@ -36,6 +44,7 @@ import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,6 +75,8 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
     LinearLayout linear_tuiguang;
     @ViewInject(R.id.linear_setting)
     LinearLayout linear_setting;
+    @ViewInject(R.id.linear_jiance)
+    LinearLayout linear_jiance;
     /**
      * 下拉刷新
      */
@@ -98,6 +109,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
         initRecyclerView();
         doSthRefresh();
         getNum();
+        getVersion();
 
     }
 
@@ -214,7 +226,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
 //        tv_hehuoren.setText("您是万运通第" + SessionManager.getInstance().getUser().getFforwardercode() + "个合伙人");
     }
 
-    @Event(value = {R.id.tv_yundangenzong, R.id.linear_siji, R.id.linear_yundan, R.id.linear_tuiguang, R.id.linear_setting})
+    @Event(value = {R.id.linear_jiance,R.id.tv_yundangenzong, R.id.linear_siji, R.id.linear_yundan, R.id.linear_tuiguang, R.id.linear_setting})
     private void gete(View view) {
         switch (view.getId()) {
 //            case R.id.relayout_msg:
@@ -236,6 +248,9 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
                 break;
             case R.id.linear_setting:
                 jumpto(SettingActivity.class);
+                break;
+                case R.id.linear_jiance:
+                jumpto(BeidouCheckActivity.class);
                 break;
         }
     }
@@ -315,5 +330,114 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
                 super.onError(ex, isOnCallback);
             }
         });
+    }
+
+    private void getVersion() {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add(3 + "");
+        loadingDialog.showDialog();
+        XUtil.GetPing(BaseURL.CHECKVERSION, list, new MyCallBack<VersionBean>() {
+            @Override
+            public void onSuccess(VersionBean o) {
+                loadingDialog.dissDialog();
+                if (o.isSuccess()) {
+                    setVersion(o.getObj());
+                }
+            }
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+                loadingDialog.dissDialog();
+            }
+        });
+    }
+    private void setVersion(final VersionEntity entity) {
+        String vsersionCode=UHelper.getAppVersionInfo(this,UHelper.TYPE_VERSION_CODE);
+        if (entity.getFversion()>Integer.parseInt(vsersionCode)){
+            AlertDialog.Builder builder=new AlertDialog.Builder(this);
+            builder.setTitle("发现新版本");
+            builder.setMessage(entity.getFupdateinfo());
+            builder.setPositiveButton("更新", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.dismiss();
+                    DownLoadFile(entity.getFurl());
+                }
+            });
+            if (entity.getFisforceupdate()){
+                builder.setCancelable(false);
+            }else {
+                builder.setCancelable(true);
+                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+            }
+            builder.create().show();
+        }
+    }
+
+    /**
+     * 下载现版本APP
+     */
+    private File filepath;
+    private void DownLoadFile(String url) {
+        UHelper.showToast(this,"下载apk");
+        if (Environment.getExternalStorageState().equals(
+                Environment.MEDIA_MOUNTED)) {
+            // 获取SD卡的目录
+            String path=Environment.getExternalStorageDirectory().getPath();
+            filepath = new File(path + File.separator + "apk" + File.separator + "chedui.apk");//仅创建路径的File对象
+            if (!filepath.exists()) {
+                filepath.mkdir();//如果路径不存在就先创建路径
+            }
+        }
+        // 准备进度条Progress弹窗
+        final ProgressDialog dialog = new ProgressDialog(this);
+        dialog.setCancelable(true);// 设置是否可以通过点击Back键取消
+        dialog.setTitle("下载中...");
+        //Progress弹窗设置为水平进度条
+        dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);// 设置水平进度条
+
+        //"http://acj3.pc6.com/pc6_soure/2017-8/me.ele_190.apk"
+        XUtil.DownLoadFile(url, filepath.getPath().toString(), new MyProgressCallBack<File>() {
+            @Override
+            public void Started() {
+                dialog.show();
+            }
+            @Override
+            public void Success(File o) {
+                dialog.dismiss();
+                installAPK();
+            }
+            @Override
+            public void Loading(long total, long current, boolean isDownloading) {
+                dialog.setMax((int) total);
+                dialog.setProgress((int) current);
+            }
+
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+                super.onError(ex, isOnCallback);
+                dialog.dismiss();
+                Log.d("==ex==",ex+"");
+            }
+        });
+
+    }
+
+
+    private void installAPK() {
+        //系统应用界面，安装apk入口，看源码
+        Intent intent = new Intent("android.intent.action.VIEW");
+        intent.addCategory("android.intent.category.DEFAULT");
+//        intent.setData(Uri.fromFile(file));
+//        intent.setType("application/vnd.android.package-archive");
+
+        //切记当要同时配Data和Type时一定要用这个方法，否则会出错
+        intent.setDataAndType(Uri.fromFile(filepath),"application/vnd.android.package-archive");
+
+        startActivityForResult(intent,0);
     }
 }

@@ -149,7 +149,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_marginTop="50dp">
+            android:layout_marginTop="20dp">
             <LinearLayout
                 android:id="@+id/linear_siji"
                 android:layout_width="match_parent"
@@ -236,6 +236,36 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/my_tuiguang"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_jiance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="10dp"
+                android:layout_marginVertical="5dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/icon_cebianlan_tuiguang"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beidoujiance"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:layout_marginLeft="10dp"/>

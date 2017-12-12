@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\git_resource\chedui\src\main\assets"/><source path="E:\git_resource\chedui\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\git_resource\chedui\src\release\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\chedui\src\main\assets"/><source path="E:\chedui\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="E:\chedui\src\release\assets"/></dataSet></merger>

@@ -122,8 +122,7 @@ public class WeiZhiActivity extends BaseActivity {
             public void onSuccess(WeizhiBean result) {
                 super.onSuccess(result);
                 loadingDialog.dissDialog();
-                Gson gson=new Gson();
-                String s=gson.toJson(result);
+
                 if (result.isSuccess() && result.getEntity()!=null && result.getEntity().getGps()!=null){
                     Marker marker=addMarkerToMap(new LatLng(result.getEntity().getGps().getWgLat(), result.getEntity().getGps().getWgLon()),"","");
                     mapUtil.moveMapCenter(new LatLng(result.getEntity().getGps().getWgLat(), result.getEntity().getGps().getWgLon()));

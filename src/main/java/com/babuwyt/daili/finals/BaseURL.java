@@ -101,6 +101,10 @@ public class BaseURL {
      * */
     public static final String QRCODE = BASE_URL + "driverBD/QRcode/make";
     /**
+     *根据车牌号查询当前车辆位置
+     * */
+    public static final String GET_LOCATIONIN_APP = BASE_URL + "appcommon/getLocationInApp";
+    /**
      * 获取订单  人员等数量
      */
 

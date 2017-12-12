@@ -143,17 +143,26 @@ public class LoadpickEntity {
     /**
      * 轨迹用到的经纬度
      */
+    private ArrayList<ArrayList<String>> result;
 
-    private ArrayList<resultEntity> result;
-    private String status;
-
-    public ArrayList<resultEntity> getResult() {
+    public ArrayList<ArrayList<String>> getResult() {
         return result;
     }
 
-    public void setResult(ArrayList<resultEntity> result) {
+    public void setResult(ArrayList<ArrayList<String>> result) {
         this.result = result;
     }
+
+    //    private ArrayList<resultEntity> result;
+    private String status;
+
+//    public ArrayList<resultEntity> getResult() {
+//        return result;
+//    }
+//
+//    public void setResult(ArrayList<resultEntity> result) {
+//        this.result = result;
+//    }
 
     public String getStatus() {
         return status;

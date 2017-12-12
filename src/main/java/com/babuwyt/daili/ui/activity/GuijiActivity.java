@@ -4,6 +4,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 import com.amap.api.maps2d.AMap;
@@ -21,6 +22,7 @@ import com.babuwyt.daili.finals.BaseURL;
 import com.babuwyt.daili.inteface.MyCallBack;
 import com.babuwyt.daili.utils.util.UHelper;
 import com.babuwyt.daili.utils.util.XUtil;
+import com.google.gson.Gson;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -33,10 +35,6 @@ import java.util.ArrayList;
  */
 @ContentView(R.layout.activity_guiji)
 public class GuijiActivity extends BaseActivity {
-
-
-
-
     @ViewInject(R.id.mapview)
     MapView mapView;
     @ViewInject(R.id.toolbar)
@@ -103,34 +101,35 @@ public class GuijiActivity extends BaseActivity {
         XUtil.GetPing(BaseURL.GUIJI, list, new MyCallBack<GuijiBean>() {
             @Override
             public void onSuccess(GuijiBean o) {
-
+                Log.d("===============", new Gson().toJson(o) + "");
                 loadingDialog.dissDialog();
-                if (o.isSuccess()) {
+                if (o.isSuccess() && o.getObj()!=null && o.getObj().getResult() != null && o.getObj().getResult().size()>0) {
                     latLngs.clear();
-                for (resultEntity entity:o.getObj().getResult()){
-                    latLngs.add(new LatLng(entity.getWgLat(),entity.getWgLon()));
-                }
-                MapUtil mapUtil = MapUtil.getInstance(GuijiActivity.this, aMap);
-                ArrayList<MarkerOptions> markerOptions = new ArrayList<MarkerOptions>();
-                markerOptions.add(mapUtil.setMarker(latLngs.get(0), R.drawable.marker_start, false));
-                markerOptions.add(mapUtil.setMarker(latLngs.get(latLngs.size() - 1), R.drawable.marker_end, false));
-                mapUtil.addMarkers(markerOptions);
-                mapUtil.setPolyline(latLngs);
-                mapUtil.setMapwithBounds(latLngs, 20);
-            }else{
-                    UHelper.showToast(GuijiActivity.this,getString(R.string.has_no_data));
+                    for (ArrayList<String> list1 : o.getObj().getResult()) {
+                        latLngs.add(new LatLng(Double.parseDouble(list1.get(1)), Double.parseDouble(list1.get(0))));
+                    }
+                    MapUtil mapUtil = MapUtil.getInstance(GuijiActivity.this, aMap);
+                    ArrayList<MarkerOptions> markerOptions = new ArrayList<MarkerOptions>();
+                    markerOptions.add(mapUtil.setMarker(latLngs.get(0), R.drawable.marker_start, false));
+                    markerOptions.add(mapUtil.setMarker(latLngs.get(latLngs.size() - 1), R.drawable.marker_end, false));
+                    mapUtil.addMarkers(markerOptions);
+                    mapUtil.setPolyline(latLngs);
+                    mapUtil.setMapwithBounds(latLngs, 20);
+                } else {
+                    UHelper.showToast(GuijiActivity.this, getString(R.string.has_no_data));
                     loadingDialog.dissDialog();
+                }
+
             }
 
-        }
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+                loadingDialog.dissDialog();
+                Log.d("===============", ex + "");
+            }
+        });
 
-        @Override
-        public void onError (Throwable ex,boolean isOnCallback){
-            loadingDialog.dissDialog();
-        }
-    });
-
-}
+    }
 
 
     @Override
