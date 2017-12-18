@@ -19,17 +19,17 @@ public class OrderDetailsBaseBean {
     private long fpickuptime;
     private long factuptime;
     private int ftaskState;
-    private int farrivetime;
+    private long farrivetime;
     private ArrayList<LoadpickEntity> loadpick;
     private ArrayList<pictureEntity> picturelist;
     private ArrayList<Tworktrack> worktrack;
     private ArrayList<TOrderGoods> httpTOrderGoodRes;
 
-    public int getFarrivetime() {
+    public long getFarrivetime() {
         return farrivetime;
     }
 
-    public void setFarrivetime(int farrivetime) {
+    public void setFarrivetime(long farrivetime) {
         this.farrivetime = farrivetime;
     }
 

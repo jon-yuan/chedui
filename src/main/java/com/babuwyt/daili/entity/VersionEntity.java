@@ -20,8 +20,8 @@ public class VersionEntity {
     private String fservicephone ;		//'客服咨询电话',
     private String fupdateinfo ;		//'更新信息',
     private  boolean fisforceupdate ;		//'是否强制更新',
-    private Date fcreatetime ;		//'创建时间',
-    private Date   fupdatetime ;		//'更新时间',
+    private String fcreatetime ;		//'创建时间',
+    private String   fupdatetime ;		//'更新时间',
 
     public String getFurl() {
         return furl;
@@ -79,19 +79,19 @@ public class VersionEntity {
         this.fisforceupdate = fisforceupdate;
     }
 
-    public Date getFcreatetime() {
+    public String getFcreatetime() {
         return fcreatetime;
     }
 
-    public void setFcreatetime(Date fcreatetime) {
+    public void setFcreatetime(String fcreatetime) {
         this.fcreatetime = fcreatetime;
     }
 
-    public Date getFupdatetime() {
+    public String getFupdatetime() {
         return fupdatetime;
     }
 
-    public void setFupdatetime(Date fupdatetime) {
+    public void setFupdatetime(String fupdatetime) {
         this.fupdatetime = fupdatetime;
     }
 }

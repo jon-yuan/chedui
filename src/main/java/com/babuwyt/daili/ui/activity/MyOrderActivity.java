@@ -3,6 +3,7 @@ package com.babuwyt.daili.ui.activity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
+import android.icu.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -134,14 +135,17 @@ public class MyOrderActivity extends BaseActivity implements MyOrderAdapter.OnRe
         mAdapter=new MyOrderAdapter(mDatas);
         recyclerview.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener(this);
-        Date date=new Date();
+
+        Calendar cl = Calendar.getInstance();
+        cl.add(Calendar.MONTH, -1);//当前时间的上个月
+        Date dateFrom = cl.getTime();
         Y=new SimpleDateFormat("yyyy年");
         MD=new SimpleDateFormat("MM月dd日");
 
-        StartY=Y.format(date);
-        StartMD=MD.format(date);
+        StartY=Y.format(dateFrom);
+        StartMD=MD.format(dateFrom);
         uptime=StartY.replace("年","-")+StartMD.replace("月","-").replace("日","");
-
+        Date date=new Date();
         EndY=Y.format(date);
         EndMD=MD.format(date);
         entime=EndY.replace("年","-")+EndMD.replace("月","-").replace("日","");

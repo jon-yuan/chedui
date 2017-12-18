@@ -140,7 +140,6 @@ public class BeidouCheckActivity extends BaseActivity{
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 super.onError(ex, isOnCallback);
-                Log.d("12====33",ex+"");
                 loadingDialog.dissDialog();
             }
         });

@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ScrollView;
@@ -133,13 +135,36 @@ public class OrderDetailsActivity extends BaseActivity {
 
         zhAdapter.setmList(zhList);
         zhuangxie_gridview.setAdapter(zhAdapter);
+        zhuangxie_gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent=new Intent();
+                intent.setClass(OrderDetailsActivity.this,LookBigPictureActivity.class);
+                intent.putExtra("index",i);
+                intent.putExtra("list",zhList);
+                startActivity(intent);
+            }
+        });
+
         qsAdapter.setmList(qsList);
         qianshou_gridview.setAdapter(qsAdapter);
-
+        qianshou_gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent=new Intent();
+                intent.setClass(OrderDetailsActivity.this,LookBigPictureActivity.class);
+                intent.putExtra("index",i);
+                intent.putExtra("list",qsList);
+                startActivity(intent);
+            }
+        });
 
         addressAdapter = new addressAdapter();
         address = new ArrayList<LoadpickEntity>();
         addresslistview.setAdapter(addressAdapter);
+
+
+
 
     }
 
@@ -219,10 +244,10 @@ public class OrderDetailsActivity extends BaseActivity {
                     setData(baseBean.getObj());
                 }
             }
-
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 loadingDialog.dissDialog();
+                Log.d("3231313213",ex+"");
             }
         });
     }

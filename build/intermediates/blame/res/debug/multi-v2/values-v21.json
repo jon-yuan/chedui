@@ -1,29 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\chedui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "E:\\git_resource\\chedui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\bbkj\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-beta1.aar\\322748337650f47c8cf330f43a2ed8a8\\res\\values-v21\\values-v21.xml",
+                    "source": "E:\\git_resource\\chedui\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
-                        "startLines": "2,5",
+                        "startLines": "8,2",
                         "startColumns": "4,4",
-                        "startOffsets": "55,266",
-                        "endLines": "4,5",
-                        "endColumns": "12,96",
-                        "endOffsets": "261,358"
+                        "startOffsets": "254,19",
+                        "endLines": "11,6",
+                        "endColumns": "12,12",
+                        "endOffsets": "458,246"
                     },
                     "to": {
-                        "startLines": "173,237",
+                        "startLines": "6,10",
                         "startColumns": "4,4",
-                        "startOffsets": "13011,17561",
-                        "endLines": "175,237",
-                        "endColumns": "12,96",
-                        "endOffsets": "13217,17653"
+                        "startOffsets": "354,560",
+                        "endLines": "9,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "555,783"
                     }
                 },
                 {
-                    "source": "C:\\Users\\bbkj\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-beta1.aar\\6c677cb050fbf722a4a7e68592c66f4b\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-beta1.aar\\0e772c60e64d5d34b029ca9a3943a72e\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,23,24,25,26,28,30,31,32,33,34,36,38,40,42,44,46,47,52,54,56,57,58,60,62,63,64,65,66,67,111,114,158,161,164,166,168,170,173,175,178,179,180,183,184,185,186,187,188,191,192,194,196,198,200,204,206,207,208,209,211,215,217,219,220,221,222,223,225,226,227,237,238,239,251,263,264,265,268,271,272,275,276,279,282",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -42,22 +42,22 @@
                     }
                 },
                 {
-                    "source": "E:\\chedui\\src\\main\\res\\values-v21\\styles.xml",
+                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0-beta1.aar\\c999eba3eb841110b7a2cd21e0f734bc\\res\\values-v21\\values-v21.xml",
                     "from": {
-                        "startLines": "8,2",
+                        "startLines": "2,5",
                         "startColumns": "4,4",
-                        "startOffsets": "254,19",
-                        "endLines": "11,6",
-                        "endColumns": "12,12",
-                        "endOffsets": "458,246"
+                        "startOffsets": "55,266",
+                        "endLines": "4,5",
+                        "endColumns": "12,96",
+                        "endOffsets": "261,358"
                     },
                     "to": {
-                        "startLines": "6,10",
+                        "startLines": "173,237",
                         "startColumns": "4,4",
-                        "startOffsets": "354,560",
-                        "endLines": "9,14",
-                        "endColumns": "12,12",
-                        "endOffsets": "555,783"
+                        "startOffsets": "13011,17561",
+                        "endLines": "175,237",
+                        "endColumns": "12,96",
+                        "endOffsets": "13217,17653"
                     }
                 }
             ]

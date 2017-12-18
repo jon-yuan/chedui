@@ -145,6 +145,11 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
+            android:name="com.babuwyt.daili.ui.activity.LookBigPictureActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
             android:name="com.babuwyt.daili.ui.activity.ChengePsdActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"

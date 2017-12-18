@@ -139,6 +139,11 @@
             android:windowSoftInputMode="stateHidden|adjustPan"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".ui.activity.LookBigPictureActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".ui.activity.ChengePsdActivity"
             android:launchMode="singleTop"
             android:windowSoftInputMode="stateHidden|adjustPan"

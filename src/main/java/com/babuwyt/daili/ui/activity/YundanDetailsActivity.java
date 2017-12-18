@@ -154,9 +154,9 @@ public class YundanDetailsActivity extends BaseActivity {
                 tuoshu += entity.getFpacknum();
             }
         }
-        tv_zhongliang.setText(zl + "吨");
-        tv_tiji.setText(tiji + "立方");
-        tv_tuoshu.setText(tuoshu + "托");
+        tv_zhongliang.setText(zl + "");
+        tv_tiji.setText(tiji + "");
+        tv_tuoshu.setText(tuoshu + "");
         StringBuilder name = new StringBuilder();
         ArrayList<String> namelist = new ArrayList<String>();
         if (entity.gettOrderGoods() != null && entity.gettOrderGoods().size() != 0) {
@@ -169,7 +169,7 @@ public class YundanDetailsActivity extends BaseActivity {
 //                tiji+=entity.
         }
         tv_mingcheng.setText(name.toString());
-        tv_baozhi.setText(entity.getFvalue() + "元");
+        tv_baozhi.setText(entity.getFvalue() + "");
         tv_time.setText(entity.getFdelivergoodtime());
 
         if (entity.getLoadpick() != null) {
