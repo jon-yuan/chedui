@@ -68,6 +68,7 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             mholder.tv_chexing.setText(mDatas.get(position).getTtype());
             mholder.tv_huowu.setText(mDatas.get(position).getGoods());
             mholder.tv_time.setText(mDatas.get(position).getPicktime());
+            mholder.tv_time_to.setText(mDatas.get(position).getFarrivetime());
             mholder.tv_qupaiche.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -98,6 +99,7 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         public TextView tv_to;
         public TextView tv_chexing;
         public TextView tv_time;
+        public TextView tv_time_to;
         public TextView tv_huowu;
         public LinearLayout layout_item;
 
@@ -112,6 +114,7 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 tv_chexing=itemView.findViewById(R.id.tv_chexing);
                 tv_huowu=itemView.findViewById(R.id.tv_huowu);
                 tv_time=itemView.findViewById(R.id.tv_time);
+                tv_time_to=itemView.findViewById(R.id.tv_time_to);
                 layout_item=itemView.findViewById(R.id.layout_item);
             }
 

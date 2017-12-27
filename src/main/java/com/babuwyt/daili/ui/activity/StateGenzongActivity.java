@@ -3,6 +3,7 @@ package com.babuwyt.daili.ui.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +40,7 @@ public class StateGenzongActivity extends BaseActivity {
     TextView tv_state;
     TextView tv_siji;
     TextView tv_dianhua;
+    LinearLayout layout_heard;
     @ViewInject(R.id.layout_driver)
     LinearLayout layout_driver;
     private TextView tv_wancheng;
@@ -79,6 +81,7 @@ public class StateGenzongActivity extends BaseActivity {
         tv_state=header.findViewById(R.id.tv_state);
         tv_siji=header.findViewById(R.id.tv_siji);
         tv_dianhua=header.findViewById(R.id.tv_dianhua);
+        layout_heard=header.findViewById(R.id.layout_heard);
         return header;
     }
     private View footer(){
@@ -123,6 +126,11 @@ public class StateGenzongActivity extends BaseActivity {
         tv_siji.setText("司机："+mdriver.getDrivername()+"  车牌号："+mdriver.getFplateno());
         tv_state.setText("已派车");
         tv_wancheng.setEnabled(state);
+        if (TextUtils.isEmpty(mdriver.getDrivername())){
+            layout_heard.setVisibility(View.GONE);
+        }else {
+            layout_heard.setVisibility(View.VISIBLE);
+        }
     }
 
 

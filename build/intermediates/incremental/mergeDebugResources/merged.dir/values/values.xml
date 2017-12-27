@@ -654,6 +654,7 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="defautl_navigationbar_size">45dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
     <dimen name="design_bottom_navigation_active_text_size">14sp</dimen>
@@ -823,22 +824,28 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-    <string name="app_name">万运通车队</string>
+    <string name="address">地址:</string>
+    <string name="app_name">万运通车队版</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="autecode_null">验证码不能为空</string>
     <string name="banbenjiance">版本检测</string>
     <string name="baoshi">保值:</string>
+    <string name="baozhuangdanw">包装单位:</string>
+    <string name="baozhuangshuliang">包装数量:</string>
     <string name="beidoujiance">北斗检测</string>
     <string name="beizhu">备注</string>
     <string name="beizhu1">备注:</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="canal">取消</string>
     <string name="carno_error">车牌号不正确</string>
+    <string name="chakan">查看</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="cheliangsuoyouren">车辆所有人</string>
     <string name="cheliangxinxi">车辆信息</string>
     <string name="chengePsd">修改密码</string>
     <string name="chepai">车牌</string>
     <string name="chepaihao">车牌号</string>
+    <string name="chepaihao1">车牌号:</string>
     <string name="chexing">车型</string>
     <string name="chexing1">车型:</string>
     <string name="chexingxuqiu">车型需求</string>
@@ -849,6 +856,7 @@
     <string name="company_code">Copyright ⓒ 2017 万运通</string>
     <string name="company_name">狮佰硕供应链管理有限公司</string>
     <string name="daipaiche">待派车</string>
+    <string name="dakai">打开</string>
     <string name="dencode_qrcode">扫描二维码</string>
     <string name="dianhua">电话</string>
     <string name="dierci">第二次(现金/油卡)</string>
@@ -866,17 +874,23 @@
     <string name="examine_unsucceed">审核不通过</string>
     <string name="fuwutiaokuan">服务条款</string>
     <string name="gerenxinxi">个人信息</string>
+    <string name="goodinfo">货物信息</string>
     <string name="has_no_data">没有查到数据</string>
     <string name="huowu">货物</string>
     <string name="huowu1">货物:</string>
     <string name="huowumingcheng">货物名称:</string>
+    <string name="is_new_version">当前版本为最新版本</string>
     <string name="jiangliyoufei">奖励邮费</string>
     <string name="jiangliyoufei1">奖励邮费:</string>
+    <string name="jianshu">件数:</string>
     <string name="jiashizheng_pic">驾驶证照片</string>
     <string name="jiashizhenghao">驾驶证号</string>
     <string name="jiesuanyueding">结算约定</string>
+    <string name="jihuadaodashijian">计划到达时间:</string>
     <string name="jihuatihuoshijian">计划提货时间:</string>
+    <string name="lianxiren">联系人:</string>
     <string name="loading_examine">装载照片</string>
+    <string name="loctiontime">定位时间:</string>
     <string name="login">登录</string>
     <string name="login_faild">登录失败</string>
     <string name="login_neterr">网络异常</string>
@@ -896,9 +910,11 @@
     <string name="my_yundan">我的运单</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="new_version">发现新版本</string>
     <string name="no_data">还没有数据</string>
     <string name="onclickisexit">再点击一次退出应用</string>
     <string name="orderdetails">订单详情</string>
+    <string name="orderno">订单号</string>
     <string name="pai">派</string>
     <string name="paichequeren">派车确认</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
@@ -931,9 +947,11 @@
     <string name="qupaiche">去派车</string>
     <string name="quxiao">取消</string>
     <string name="register">注册</string>
+    <string name="renwushuoming">任务说明:</string>
     <string name="search">搜索</string>
     <string name="search_menu_title">Search</string>
     <string name="search_siji">搜索司机</string>
+    <string name="select">选择</string>
     <string name="select_siji">选择司机</string>
     <string name="setting">设置</string>
     <string name="share">分享</string>
@@ -941,6 +959,7 @@
     <string name="shenfenzhengnum">身份证号</string>
     <string name="shiji_tihuo_time">实际提货时间</string>
     <string name="shishiweizhi">实时位置</string>
+    <string name="shouqi">收起</string>
     <string name="shurubili">输入比例</string>
     <string name="shurujine">输入金额</string>
     <string name="shuruyanzhengma">输入验证码</string>
@@ -951,6 +970,7 @@
     <string name="state">状态</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="test">测试</string>
+    <string name="ti">提</string>
     <string name="tihuo">提货</string>
     <string name="tihuo_time">计划提货时间</string>
     <string name="tihuoshijian">提货时间:</string>
@@ -961,6 +981,7 @@
     <string name="title_section3">Section 3</string>
     <string name="tuoshu">托数:</string>
     <string name="two_input_psd_is_no_same">两次驶入密码不相同</string>
+    <string name="updata">更新</string>
     <string name="updatepsd">修改密码</string>
     <string name="wan">完</string>
     <string name="wanchengshijian">完成时间</string>
@@ -971,6 +992,8 @@
     <string name="xianjinkouchu1">*低于默认比例范围扣除现金</string>
     <string name="xianlu">线路:</string>
     <string name="xiayibu">下一步</string>
+    <string name="xie">卸</string>
+    <string name="xie1">卸:</string>
     <string name="xiehuo">卸货</string>
     <string name="xingshiguiji">行驶轨迹</string>
     <string name="xingshizheng_pic">行驶证照片</string>
@@ -992,8 +1015,10 @@
     <string name="yundanzhuangtai1">运单状态</string>
     <string name="yunfeibaojia">运费报价</string>
     <string name="yunfeibaojia1">运费报价:</string>
+    <string name="yunshuinfo">运输信息</string>
     <string name="yuundanhao">运单号:</string>
     <string name="zhongliang">重量:</string>
+    <string name="zhuang1">装:</string>
     <string name="zhuanghuoyipaizhao">装货已拍照</string>
     <string name="zhuanghuoyiqiandao">装货已签到</string>
     <string name="zhuangtaigenzong">状态跟踪</string>

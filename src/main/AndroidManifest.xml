@@ -48,6 +48,15 @@
         android:roundIcon="@drawable/icon_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.babuwyt.daili.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
         <activity
             android:name=".ui.activity.MainActivity"
             android:launchMode="singleTask"
@@ -58,6 +67,11 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DispatchCarActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"/>
         <activity
@@ -84,6 +98,10 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.activity.MyOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.GuijiHuiFangActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"/>
         <activity

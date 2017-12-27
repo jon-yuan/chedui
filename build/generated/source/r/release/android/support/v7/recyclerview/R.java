@@ -34,9 +34,9 @@ public final class R {
         public static final int item_touch_helper_swipe_escape_velocity = 0x7f060083;
     }
     public static final class id {
-        public static final int italic = 0x7f08008f;
-        public static final int item_touch_helper_previous_elevation = 0x7f080090;
-        public static final int normal = 0x7f0800c6;
+        public static final int italic = 0x7f080092;
+        public static final int item_touch_helper_previous_elevation = 0x7f080093;
+        public static final int normal = 0x7f0800cb;
     }
     public static final class styleable {
         public static final int[] FontFamily = { 0x7f03008f, 0x7f030090, 0x7f030091, 0x7f030092 };

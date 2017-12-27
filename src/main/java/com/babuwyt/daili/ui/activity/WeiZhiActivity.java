@@ -18,6 +18,7 @@ import com.babuwyt.daili.MapUtil;
 import com.babuwyt.daili.R;
 import com.babuwyt.daili.base.BaseActivity;
 import com.babuwyt.daili.bean.WeizhiBean;
+import com.babuwyt.daili.entity.WeizhiObjEntity;
 import com.babuwyt.daili.finals.BaseURL;
 import com.babuwyt.daili.inteface.MyCallBack;
 import com.babuwyt.daili.utils.util.UHelper;
@@ -108,7 +109,7 @@ public class WeiZhiActivity extends BaseActivity {
                 .position(latLng)
                 .title(title)
                 .snippet(snippet)
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.location_car))
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.icon_blue_car))
         );
     }
 
@@ -122,13 +123,13 @@ public class WeiZhiActivity extends BaseActivity {
             public void onSuccess(WeizhiBean result) {
                 super.onSuccess(result);
                 loadingDialog.dissDialog();
-
                 if (result.isSuccess() && result.getEntity()!=null && result.getEntity().getGps()!=null){
+                    WeizhiObjEntity res=result.getEntity();
+                    res.setDrivename(name);
                     Marker marker=addMarkerToMap(new LatLng(result.getEntity().getGps().getWgLat(), result.getEntity().getGps().getWgLon()),"","");
+                    marker.setObject(res);
                     mapUtil.moveMapCenter(new LatLng(result.getEntity().getGps().getWgLat(), result.getEntity().getGps().getWgLon()));
                     marker.showInfoWindow();
-                    mAdapter.setData(name,result.getEntity().getAddress());
-                    UHelper.showToast(WeiZhiActivity.this,result.getMsg());
                 }else {
                     UHelper.showToast(WeiZhiActivity.this,result.getMsg());
                 }
@@ -138,7 +139,6 @@ public class WeiZhiActivity extends BaseActivity {
             public void onError(Throwable ex, boolean isOnCallback) {
                 super.onError(ex, isOnCallback);
                 loadingDialog.dissDialog();
-                Log.d("11111",ex+"");
                 UHelper.showToast(WeiZhiActivity.this,getString(R.string.NET_ERROR));
             }
         });

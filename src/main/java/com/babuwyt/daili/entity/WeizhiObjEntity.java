@@ -10,8 +10,35 @@ import org.xutils.http.annotation.HttpResponse;
  */
 @HttpResponse(parser = JsonResponseParser.class)
 public class WeizhiObjEntity {
+    private String drivename;
     private String address;
+    private String drivecard;
+    private String utc;
     private WeizhiEntity gps;
+
+    public String getDrivename() {
+        return drivename;
+    }
+
+    public void setDrivename(String drivename) {
+        this.drivename = drivename;
+    }
+
+    public String getDrivecard() {
+        return drivecard;
+    }
+
+    public void setDrivecard(String drivecard) {
+        this.drivecard = drivecard;
+    }
+
+    public String getUtc() {
+        return utc;
+    }
+
+    public void setUtc(String utc) {
+        this.utc = utc;
+    }
 
     public String getAddress() {
         return address;

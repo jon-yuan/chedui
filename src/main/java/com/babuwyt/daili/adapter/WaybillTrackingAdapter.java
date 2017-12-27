@@ -78,6 +78,7 @@ public class WaybillTrackingAdapter extends BaseAdapter {
                 Intent intent=new Intent();
                 intent.setClass(mContext, GuijiActivity.class);
                 intent.putExtra("fid",mList.get(i).getFid());
+                intent.putExtra("state", mList.get(i).getFtaskstate());
                 mContext.startActivity(intent);
             }
         });

@@ -5,8 +5,10 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.content.FileProvider;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.LinearLayoutManager;
@@ -154,7 +156,6 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
             public void onSuccess(MainBean result) {
                 super.onSuccess(result);
                 loadingDialog.dissDialog();
-                Log.d("===========",new Gson().toJson(result));
                 if (result.isSuccess()) {
                     if (mDatas != null) {
                         mDatas.clear();
@@ -172,7 +173,6 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
                 super.onError(ex, isOnCallback);
                 loadingDialog.dissDialog();
                 springview.onFinishFreshAndLoad();
-                Log.d("===========",ex+"");
             }
         });
     }
@@ -303,7 +303,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
 
     @Override
     public void onItemClick(int i) {
-        intent.setClass(MainActivity.this, YundanDetailsActivity.class);
+        intent.setClass(MainActivity.this, DispatchCarActivity.class);
         intent.putExtra("fid", mDatas.get(i).getFid());
         startActivity(intent);
     }
@@ -354,9 +354,9 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
         String vsersionCode=UHelper.getAppVersionInfo(this,UHelper.TYPE_VERSION_CODE);
         if (entity.getFversion()>Integer.parseInt(vsersionCode)){
             AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setTitle("发现新版本");
+            builder.setTitle(getString(R.string.new_version));
             builder.setMessage(entity.getFupdateinfo());
-            builder.setPositiveButton("更新", new DialogInterface.OnClickListener() {
+            builder.setPositiveButton(getString(R.string.updata), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     dialogInterface.dismiss();
@@ -367,7 +367,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
                 builder.setCancelable(false);
             }else {
                 builder.setCancelable(true);
-                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getString(R.string.canal), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
@@ -409,7 +409,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
             @Override
             public void Success(File o) {
                 dialog.dismiss();
-                installAPK();
+                install(filepath);
             }
             @Override
             public void Loading(long total, long current, boolean isDownloading) {
@@ -421,23 +421,26 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
             public void onError(Throwable ex, boolean isOnCallback) {
                 super.onError(ex, isOnCallback);
                 dialog.dismiss();
-                Log.d("==ex==",ex+"");
             }
         });
 
     }
-
-
-    private void installAPK() {
-        //系统应用界面，安装apk入口，看源码
-        Intent intent = new Intent("android.intent.action.VIEW");
-        intent.addCategory("android.intent.category.DEFAULT");
-//        intent.setData(Uri.fromFile(file));
-//        intent.setType("application/vnd.android.package-archive");
-
-        //切记当要同时配Data和Type时一定要用这个方法，否则会出错
-        intent.setDataAndType(Uri.fromFile(filepath),"application/vnd.android.package-archive");
-
-        startActivityForResult(intent,0);
+    private void install(File filePath) {
+        File apkFile = filePath;
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            Uri contentUri = FileProvider.getUriForFile(
+                    this
+                    , "com.babuwyt.daili.fileprovider"
+                    , apkFile);
+            intent.setDataAndType(contentUri, "application/vnd.android.package-archive");
+        } else {
+            intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
+        }
+        startActivity(intent);
     }
+
+
 }

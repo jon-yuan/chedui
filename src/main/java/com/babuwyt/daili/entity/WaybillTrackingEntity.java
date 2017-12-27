@@ -17,6 +17,7 @@ public class WaybillTrackingEntity {
     private String fsendcarno;
     private String fpickuptime;
     private String fmanageid;
+    private String farrivetime;
     private int ftaskstate;
     private String fvicecard;
     private String fplateno;
@@ -48,6 +49,14 @@ public class WaybillTrackingEntity {
 
     public String getFid() {
         return fid;
+    }
+
+    public String getFarrivetime() {
+        return farrivetime;
+    }
+
+    public void setFarrivetime(String farrivetime) {
+        this.farrivetime = farrivetime;
     }
 
     public void setFid(String fid) {

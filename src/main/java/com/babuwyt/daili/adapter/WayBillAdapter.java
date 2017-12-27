@@ -91,6 +91,7 @@ public class WayBillAdapter extends RecyclerView.Adapter<WayBillAdapter.WayBillV
                 Intent intent = new Intent();
                 intent.setClass(mContext, GuijiActivity.class);
                 intent.putExtra("fid", mList.get(position).getFid());
+                intent.putExtra("state", mList.get(position).getFtaskstate());
                 mContext.startActivity(intent);
             }
         });

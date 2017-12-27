@@ -15,6 +15,7 @@ public class MainEntity {
     private String fsendcarno;
     private String fpickuptime;
     private String fmanageid;
+    private String farrivetime;
     private int ftaskstate;
     private String fvicecard;
     private String fplateno;
@@ -86,6 +87,14 @@ public class MainEntity {
 
     public int getFtaskstate() {
         return ftaskstate;
+    }
+
+    public String getFarrivetime() {
+        return farrivetime;
+    }
+
+    public void setFarrivetime(String farrivetime) {
+        this.farrivetime = farrivetime;
     }
 
     public void setFtaskstate(int ftaskstate) {

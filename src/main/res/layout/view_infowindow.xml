@@ -1,57 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:background="@drawable/qipao">
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:minWidth="100dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="vertical"-->
-        <!--android:padding="5dp">-->
+    android:background="@drawable/icon_msg_qipao">
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
         <LinearLayout
-            android:layout_width="200dp"
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp">
-            <ImageView
+            android:padding="2dp">
+            <TextView
+                android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/resume"/>
+                android:textSize="12sp"
+                android:text="@string/siji1"
+                android:singleLine="true"
+                android:textColor="@color/black_666"/>
             <TextView
                 android:id="@+id/name"
-                android:layout_marginLeft="14dp"
+                android:layout_marginLeft="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:text=""
                 android:singleLine="true"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black_666"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:gravity="top"
-            android:orientation="horizontal">
-            <ImageView
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="2dp">
+            <TextView
+                android:layout_marginLeft="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/pointer"/>
+                android:textSize="12sp"
+                android:text="@string/chepaihao1"
+                android:singleLine="true"
+                android:textColor="@color/black_666"/>
             <TextView
-                android:id="@+id/address"
-                android:layout_marginLeft="14dp"
+                android:id="@+id/carno"
+                android:layout_marginLeft="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:text=""
-                android:textColor="@color/black"/>
-        <!--</LinearLayout>-->
+                android:singleLine="true"
+                android:textColor="@color/black_666"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="2dp">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/loctiontime"
+                android:singleLine="true"
+                android:textColor="@color/black_666"/>
+            <TextView
+                android:id="@+id/time"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/black_666"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:gravity="top"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/address"
+                android:textColor="@color/black_666"/>
+            <TextView
+                android:id="@+id/address"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text=""
+                android:textColor="@color/black_666"/>
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>

@@ -1,4 +1,4 @@
-#Mon Dec 18 18:01:20 CST 2017
+#Tue Dec 26 09:56:05 CST 2017
 base.0=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dex\\release\\0
 path.0=classes.dex
 renamed.0=classes.dex

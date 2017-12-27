@@ -43,20 +43,23 @@ public class GuijiActivity extends BaseActivity {
     private Polyline polyline;
     private String fid;
     private ArrayList<LatLng> latLngs;
-
+    private int state;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mapView.onCreate(savedInstanceState);// 此方法必须重写
         fid = getIntent().getStringExtra("fid");
+        state = getIntent().getIntExtra("state",0);
         init();
         initMap();
         getGuiji();
     }
 
     private void initMap() {
+
         aMap = mapView.getMap();
         aMap.setMapType(AMap.MAP_TYPE_NORMAL);// 卫星地图模式
+
         latLngs = new ArrayList<LatLng>();
 //        aMap.moveCamera(CameraUpdateFactory.zoomTo(10));
 //        aMap.setTrafficEnabled(true);// 显示实时交通状况
@@ -101,7 +104,6 @@ public class GuijiActivity extends BaseActivity {
         XUtil.GetPing(BaseURL.GUIJI, list, new MyCallBack<GuijiBean>() {
             @Override
             public void onSuccess(GuijiBean o) {
-                Log.d("===============", new Gson().toJson(o) + "");
                 loadingDialog.dissDialog();
                 if (o.isSuccess() && o.getObj()!=null && o.getObj().getResult() != null && o.getObj().getResult().size()>0) {
                     latLngs.clear();
@@ -111,7 +113,11 @@ public class GuijiActivity extends BaseActivity {
                     MapUtil mapUtil = MapUtil.getInstance(GuijiActivity.this, aMap);
                     ArrayList<MarkerOptions> markerOptions = new ArrayList<MarkerOptions>();
                     markerOptions.add(mapUtil.setMarker(latLngs.get(0), R.drawable.marker_start, false));
-                    markerOptions.add(mapUtil.setMarker(latLngs.get(latLngs.size() - 1), R.drawable.marker_end, false));
+                    if (state==5|| state==6 || state==7){
+                        markerOptions.add(mapUtil.setMarker(latLngs.get(latLngs.size() - 1), R.drawable.marker_end, false));
+                    }else {
+                        markerOptions.add(mapUtil.setMarker(latLngs.get(latLngs.size() - 1), R.drawable.icon_blue_car, false));
+                    }
                     mapUtil.addMarkers(markerOptions);
                     mapUtil.setPolyline(latLngs);
                     mapUtil.setMapwithBounds(latLngs, 20);
@@ -125,7 +131,6 @@ public class GuijiActivity extends BaseActivity {
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 loadingDialog.dissDialog();
-                Log.d("===============", ex + "");
             }
         });
 

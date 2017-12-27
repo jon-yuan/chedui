@@ -6,9 +6,11 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
+import android.support.v4.content.FileProvider;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -164,6 +166,8 @@ public class SettingActivity extends BaseActivity {
                 });
             }
             builder.create().show();
+        }else {
+            UHelper.showToast(this,getString(R.string.is_new_version));
         }
     }
 
@@ -198,7 +202,7 @@ public class SettingActivity extends BaseActivity {
             @Override
             public void Success(File o) {
                 dialog.dismiss();
-                installAPK();
+                install(filepath);
             }
             @Override
             public void Loading(long total, long current, boolean isDownloading) {
@@ -215,19 +219,22 @@ public class SettingActivity extends BaseActivity {
         });
 
     }
-
-
-    private void installAPK() {
-        //系统应用界面，安装apk入口，看源码
-        Intent intent = new Intent("android.intent.action.VIEW");
-        intent.addCategory("android.intent.category.DEFAULT");
-//        intent.setData(Uri.fromFile(file));
-//        intent.setType("application/vnd.android.package-archive");
-
-        //切记当要同时配Data和Type时一定要用这个方法，否则会出错
-        intent.setDataAndType(Uri.fromFile(filepath),"application/vnd.android.package-archive");
-
-        startActivityForResult(intent,0);
+    private void install(File filePath) {
+        File apkFile = filePath;
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            Uri contentUri = FileProvider.getUriForFile(
+                    this
+                    , "com.babuwyt.daili.fileprovider"
+                    , apkFile);
+            intent.setDataAndType(contentUri, "application/vnd.android.package-archive");
+        } else {
+            intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
+        }
+        startActivity(intent);
     }
+
 
 }

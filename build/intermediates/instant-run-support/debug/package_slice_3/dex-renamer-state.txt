@@ -1,4 +1,4 @@
-#Mon Dec 18 17:58:05 CST 2017
-base.0=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+#Wed Dec 27 16:20:31 CST 2017
+base.0=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\60
 path.0=classes.dex
 renamed.0=classes.dex

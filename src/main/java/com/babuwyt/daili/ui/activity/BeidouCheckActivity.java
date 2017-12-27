@@ -120,7 +120,7 @@ public class BeidouCheckActivity extends BaseActivity{
                 if (result.isSuccess()){
                     if (result.getEntity()!=null){
                         WeizhiObjEntity entity=result.getEntity();
-                        String address=entity.getAddress();
+                        entity.setDrivename("");
                         double lat=0;
                         double lon=0;
                         if (result.getEntity().getGps()!=null){
@@ -128,9 +128,11 @@ public class BeidouCheckActivity extends BaseActivity{
                             lon=result.getEntity().getGps().getWgLon();
                         }
                         Marker marker=addMarkerToMap(new LatLng(lat,lon ),"","");
+                        marker.setObject(entity);
                         mapUtil.moveMapCenter(new LatLng(lat,lon));
                         marker.showInfoWindow();
-                        mAdapter.setData(carNo,address);
+
+//                        mAdapter.setData(carNo,address);
                     }
                 }else {
                     UHelper.showToast(BeidouCheckActivity.this,result.getMsg());

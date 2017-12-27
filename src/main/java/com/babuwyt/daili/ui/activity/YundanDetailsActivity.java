@@ -65,6 +65,7 @@ public class YundanDetailsActivity extends BaseActivity {
     TextView beizhu;
 
 
+
     @ViewInject(R.id.listview)
     CustomListView listview;
     private YundanDetailsAdapter mAdapter;

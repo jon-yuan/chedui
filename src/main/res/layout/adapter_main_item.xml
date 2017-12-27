@@ -28,7 +28,7 @@
                 android:id="@+id/tv_yundancode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:ellipsize="end"
                 android:singleLine="true"
                 android:layout_marginLeft="5dp"
@@ -46,7 +46,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:text="@string/luxian"
                 android:ellipsize="end"
                 android:singleLine="true"
@@ -65,7 +65,7 @@
                     android:id="@+id/tv_form"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
+                    android:textSize="12sp"
                     android:maxLength="10"
                     android:singleLine="true"
                     android:ellipsize="end"
@@ -79,7 +79,7 @@
                     android:id="@+id/tv_to"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
+                    android:textSize="12sp"
                     android:maxLength="10"
                     android:singleLine="true"
                     android:ellipsize="end"
@@ -101,7 +101,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:text="@string/chexingxuqiu"
                 android:ellipsize="end"
                 android:singleLine="true"
@@ -112,7 +112,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:gravity="center_vertical|right"
                 android:ellipsize="end"
                 android:singleLine="true"
@@ -132,7 +132,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:text="@string/huowu"
                 android:ellipsize="end"
                 android:singleLine="true"
@@ -143,8 +143,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
-                android:text="果蔬农产品"
+                android:textSize="12sp"
                 android:gravity="center_vertical|right"
                 android:ellipsize="end"
                 android:singleLine="true"
@@ -164,7 +163,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:text="@string/yujitihuoshijian"
                 android:ellipsize="end"
                 android:singleLine="true"
@@ -175,8 +174,38 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
-                android:text="2017/5/11 11:10"
+                android:textSize="12sp"
+                android:gravity="center_vertical|right"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black_666" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingVertical="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/yujidaodashijian"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black_666" />
+            <TextView
+                android:id="@+id/tv_time_to"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
                 android:gravity="center_vertical|right"
                 android:ellipsize="end"
                 android:singleLine="true"

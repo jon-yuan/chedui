@@ -14,6 +14,7 @@ public class BaseURL {
      */
 //    public static final String BASE_URL = "http://192.168.2.122:8050/";//黄鹏波
     public static final String BASE_URL = "http://www.babuwyt.com:8080/tmsapi/";//测试环境
+//    public static final String BASE_URL = "http://192.168.2.41:8080/tmsapi/";
 //    public static final String BASE_URL = "http://123.206.75.242:8090/tmsapi/";//测试环境
 //    public static final String BASE_URL = "http://192.168.2.71:8090/tmsapi/";//测试环境
 //    public static final String BASE_URL = "http://192.168.2.224:8080/tmsapi/";//测试环境

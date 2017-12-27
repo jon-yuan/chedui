@@ -250,7 +250,7 @@ public class TagAliasOperatorHelper {
             tagAliasActionCache.remove(sequence);
             String logs = getActionStr(tagAliasBean.action)+" alias success";
             Logger.i(TAG,logs);
-            Util.showToast(logs, context);
+//            Util.showToast(logs, context);
         }else{
             String logs = "Failed to " + getActionStr(tagAliasBean.action)+" alias, errorCode:" + jPushMessage.getErrorCode();
             Logger.e(TAG, logs);

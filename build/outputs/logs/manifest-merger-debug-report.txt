@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
-INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
-INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
-INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
+INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
+INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
+INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
 MERGED from [com.contrarywind:Android-PickerView:3.2.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\Android-PickerView-3.2.6.aar\e590b5407cf2801b6e8080a89a5b4204\AndroidManifest.xml:2:1-11:12
 MERGED from [com.liaoinstan.springview:library:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\library-1.3.0.aar\c178a6457cbf6f18868405da3efa8bcc\AndroidManifest.xml:2:1-17:12
 MERGED from [cn.bingoogolapple:bga-refreshlayout:1.1.7] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\bga-refreshlayout-1.1.7.aar\3eeed1d43659b3bf6a8c699ca0f00b88\AndroidManifest.xml:2:1-10:12
@@ -23,20 +23,20 @@ MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\dd976921a2b4002ba13ab0cc820aea90\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\b5b673b562be7c45643d9abfceb584e6\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\c34a011e9f6bdaf4dc9ff54273480cb5\AndroidManifest.xml:17:1-31:12
-INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
-INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
-INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
+INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
+INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
+INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
 	package
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml
 		INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
 		INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-279:12
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-297:12
 		INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:11-69
@@ -135,7 +135,7 @@ ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:42:5-68
 	android:name
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:42:22-65
 application
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:43:5-277:19
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:43:5-295:19
 MERGED from [com.liaoinstan.springview:library:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\library-1.3.0.aar\c178a6457cbf6f18868405da3efa8bcc\AndroidManifest.xml:11:5-15:19
 MERGED from [com.liaoinstan.springview:library:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\library-1.3.0.aar\c178a6457cbf6f18868405da3efa8bcc\AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:design:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\design-26.0.0-beta1.aar\c999eba3eb841110b7a2cd21e0f734bc\AndroidManifest.xml:25:5-29:19
@@ -180,125 +180,121 @@ MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.g
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:50:9-40
 	android:name
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:44:9-39
+provider#android.support.v4.content.FileProvider
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:51:9-59:20
+	android:grantUriPermissions
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:55:13-47
+	android:authorities
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:53:13-65
+	android:exported
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:54:13-37
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:52:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:56:13-58:54
+	android:resource
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:58:17-51
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:57:17-67
 activity#com.babuwyt.daili.ui.activity.MainActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:51:9-54:52
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:60:9-63:52
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:54:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:63:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:53:13-44
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:62:13-44
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:52:13-53
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:61:13-53
 activity#com.babuwyt.daili.ui.activity.SettingActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:55:9-58:52
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:64:9-67:52
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:58:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:67:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:57:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:66:13-43
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:56:13-56
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:65:13-56
 activity#com.babuwyt.daili.ui.activity.LoginActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:59:9-62:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:68:9-71:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:62:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:71:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:61:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:70:13-43
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:60:13-54
-activity#com.babuwyt.daili.ui.activity.WelcomeActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:63:9-72:20
-	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:66:13-49
-	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:65:13-43
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:64:13-56
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:67:13-71:29
-action#android.intent.action.MAIN
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:68:17-69
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:68:25-66
-category#android.intent.category.LAUNCHER
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:70:17-77
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:70:27-74
-activity#com.babuwyt.daili.ui.activity.GuideActivity
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:69:13-54
+activity#com.babuwyt.daili.ui.activity.DispatchCarActivity
 ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:73:9-76:51
 	android:screenOrientation
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:76:13-49
 	android:launchMode
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:75:13-43
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:74:13-54
-activity#com.babuwyt.daili.ui.activity.MsgActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:77:9-80:51
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:74:13-60
+activity#com.babuwyt.daili.ui.activity.WelcomeActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:77:9-86:20
 	android:screenOrientation
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:80:13-49
 	android:launchMode
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:79:13-43
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:78:13-52
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:78:13-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:81:13-85:29
+action#android.intent.action.MAIN
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:82:17-69
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:82:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:84:17-77
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:84:27-74
+activity#com.babuwyt.daili.ui.activity.GuideActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:87:9-90:51
+	android:screenOrientation
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:90:13-49
+	android:launchMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:89:13-43
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:88:13-54
+activity#com.babuwyt.daili.ui.activity.MsgActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:91:9-94:51
+	android:screenOrientation
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:94:13-49
+	android:launchMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:93:13-43
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:92:13-52
 activity#com.babuwyt.daili.ui.activity.QRcodeActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:81:9-84:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:95:9-98:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:84:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:98:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:83:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:97:13-43
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:82:13-55
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:96:13-55
 activity#com.babuwyt.daili.ui.activity.MyOrderActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:85:9-88:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:99:9-102:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:88:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:102:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:87:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:101:13-43
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:86:13-56
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:100:13-56
+activity#com.babuwyt.daili.ui.activity.GuijiHuiFangActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:103:9-106:51
+	android:screenOrientation
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:106:13-49
+	android:launchMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:105:13-43
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:104:13-61
 activity#com.babuwyt.daili.ui.activity.OrderDetailsActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:89:9-92:51
-	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:92:13-49
-	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:91:13-43
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:90:13-61
-activity#com.babuwyt.daili.ui.activity.MySijiActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:93:9-97:51
-	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:97:13-49
-	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:95:13-43
-	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:96:13-64
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:94:13-55
-activity#com.babuwyt.daili.ui.activity.SijiDetailsActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:98:9-101:51
-	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:101:13-49
-	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:100:13-43
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:99:13-60
-activity#com.babuwyt.daili.ui.activity.WaybillTrackingActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:102:9-105:51
-	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:105:13-49
-	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:104:13-43
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:103:13-64
-activity#com.babuwyt.daili.ui.activity.SearchSijiActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:106:9-110:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:107:9-110:51
 	android:screenOrientation
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:110:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:108:13-43
-	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:109:13-64
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:109:13-43
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:107:13-59
-activity#com.babuwyt.daili.ui.activity.YundanDetailsActivity
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:108:13-61
+activity#com.babuwyt.daili.ui.activity.MySijiActivity
 ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:111:9-115:51
 	android:screenOrientation
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:115:13-49
@@ -307,277 +303,313 @@ ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:111:9-115:51
 	android:windowSoftInputMode
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:114:13-64
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:112:13-62
-activity#com.babuwyt.daili.ui.activity.PaiDanActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:116:9-120:51
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:112:13-55
+activity#com.babuwyt.daili.ui.activity.SijiDetailsActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:116:9-119:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:120:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:119:13-49
 	android:launchMode
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:118:13-43
-	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:119:13-64
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:117:13-55
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:117:13-60
+activity#com.babuwyt.daili.ui.activity.WaybillTrackingActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:120:9-123:51
+	android:screenOrientation
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:123:13-49
+	android:launchMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:122:13-43
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:121:13-64
+activity#com.babuwyt.daili.ui.activity.SearchSijiActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:124:9-128:51
+	android:screenOrientation
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:128:13-49
+	android:launchMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:126:13-43
+	android:windowSoftInputMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:127:13-64
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:125:13-59
+activity#com.babuwyt.daili.ui.activity.YundanDetailsActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:129:9-133:51
+	android:screenOrientation
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:133:13-49
+	android:launchMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:131:13-43
+	android:windowSoftInputMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:132:13-64
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:130:13-62
+activity#com.babuwyt.daili.ui.activity.PaiDanActivity
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:134:9-138:51
+	android:screenOrientation
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:138:13-49
+	android:launchMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:136:13-43
+	android:windowSoftInputMode
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:137:13-64
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:135:13-55
 activity#com.babuwyt.daili.ui.activity.StateGenzongActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:121:9-125:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:139:9-143:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:125:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:143:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:123:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:141:13-43
 	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:124:13-64
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:142:13-64
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:122:13-61
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:140:13-61
 activity#com.babuwyt.daili.ui.activity.GuijiActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:126:9-130:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:144:9-148:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:130:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:148:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:128:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:146:13-43
 	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:129:13-64
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:147:13-64
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:127:13-54
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:145:13-54
 activity#com.babuwyt.daili.ui.activity.WeiZhiActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:131:9-135:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:149:9-153:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:135:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:153:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:133:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:151:13-43
 	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:134:13-64
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:152:13-64
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:132:13-55
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:150:13-55
 activity#com.babuwyt.daili.ui.activity.BeidouCheckActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:136:9-140:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:154:9-158:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:140:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:158:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:138:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:156:13-43
 	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:139:13-64
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:157:13-64
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:137:13-60
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:155:13-60
 activity#com.babuwyt.daili.ui.activity.LookBigPictureActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:141:9-145:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:159:9-163:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:145:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:163:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:143:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:161:13-43
 	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:144:13-64
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:162:13-64
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:142:13-63
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:160:13-63
 activity#com.babuwyt.daili.ui.activity.ChengePsdActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:146:9-150:51
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:164:9-168:51
 	android:screenOrientation
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:150:13-49
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:168:13-49
 	android:launchMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:148:13-43
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:166:13-43
 	android:windowSoftInputMode
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:149:13-64
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:167:13-64
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:147:13-58
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:165:13-58
 activity#com.babuwyt.daili.utils.jpush.TestActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:153:9-160:20
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:171:9-178:20
 	android:exported
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:155:13-37
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:173:13-37
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:154:13-53
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:172:13-53
 intent-filter#jpush.testAction+jpush.testCategory
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:156:13-159:29
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:174:13-177:29
 action#jpush.testAction
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:157:17-59
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:175:17-59
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:157:25-56
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:175:25-56
 category#jpush.testCategory
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:158:17-63
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:176:17-63
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:158:27-60
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:176:27-60
 activity#cn.jpush.android.ui.PopWinActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:163:9-165:39
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:181:9-183:39
 	android:exported
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:165:13-37
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:183:13-37
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:164:13-62
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:182:13-62
 activity#cn.jpush.android.ui.PushActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:168:9-179:20
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:186:9-197:20
 	android:exported
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:171:13-37
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:189:13-37
 	android:configChanges
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:170:13-63
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:188:13-63
 	android:theme
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:172:13-60
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:190:13-60
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:169:13-60
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:187:13-60
 intent-filter#android.intent.category.DEFAULT+cn.jpush.android.ui.PushActivity+com.babuwyt.daili
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:173:13-178:29
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:191:13-196:29
 action#cn.jpush.android.ui.PushActivity
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:174:17-75
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:192:17-75
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:174:25-72
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:192:25-72
 category#android.intent.category.DEFAULT
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:176:17-76
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:194:17-76
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:176:27-73
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:194:27-73
 category#com.babuwyt.daili
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:177:17-62
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:195:17-62
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:177:27-59
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:195:27-59
 service#cn.jpush.android.service.PushService
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:183:9-193:19
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:201:9-211:19
 	android:process
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:186:13-36
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:204:13-36
 	android:exported
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:185:13-37
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:203:13-37
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:184:13-64
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:202:13-64
 intent-filter#cn.jpush.android.intent.PUSH_TIME+cn.jpush.android.intent.PushService+cn.jpush.android.intent.REGISTER+cn.jpush.android.intent.REPORT
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:187:13-192:29
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:205:13-210:29
 action#cn.jpush.android.intent.REGISTER
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:188:17-75
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:206:17-75
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:188:25-72
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:206:25-72
 action#cn.jpush.android.intent.REPORT
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:189:17-73
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:207:17-73
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:189:25-70
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:207:25-70
 action#cn.jpush.android.intent.PushService
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:190:17-78
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:208:17-78
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:190:25-75
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:208:25-75
 action#cn.jpush.android.intent.PUSH_TIME
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:191:17-76
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:209:17-76
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:191:25-73
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:209:25-73
 provider#cn.jpush.android.service.DataProvider
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:195:9-198:40
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:213:9-216:40
 	android:authorities
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:197:13-65
-	android:exported
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:198:13-37
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:196:13-65
-service#cn.jpush.android.service.DaemonService
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:202:9-211:19
-	android:enabled
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:204:13-35
-	android:exported
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:205:13-36
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:203:13-66
-intent-filter#cn.jpush.android.intent.DaemonService+com.babuwyt.daili
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:206:13-209:29
-action#cn.jpush.android.intent.DaemonService
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:207:17-80
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:207:25-77
-receiver#cn.jpush.android.service.PushReceiver
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:214:9-233:20
-	android:enabled
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:216:13-35
-	android:exported
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:217:13-37
-	android:name
 		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:215:13-65
-intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.babuwyt.daili
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:218:13-221:29
-	android:priority
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:218:28-51
-action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:219:17-94
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:219:25-91
-intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:222:13-225:29
-action#android.intent.action.USER_PRESENT
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:223:17-77
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:223:25-74
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:224:17-79
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:224:25-76
-intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:227:13-232:29
-action#android.intent.action.PACKAGE_ADDED
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:228:17-78
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:228:25-75
-action#android.intent.action.PACKAGE_REMOVED
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:229:17-80
-	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:229:25-77
-data
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:231:17-50
-	android:scheme
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:231:23-47
-receiver#cn.jpush.android.service.AlarmReceiver
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:236:9-238:40
 	android:exported
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:238:13-37
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:216:13-37
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:237:13-66
-receiver#com.babuwyt.daili.utils.jpush.MyReceiver
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:242:9-253:20
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:214:13-65
+service#cn.jpush.android.service.DaemonService
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:220:9-229:19
 	android:enabled
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:244:13-35
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:222:13-35
+	android:exported
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:223:13-36
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:243:13-51
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:221:13-66
+intent-filter#cn.jpush.android.intent.DaemonService+com.babuwyt.daili
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:224:13-227:29
+action#cn.jpush.android.intent.DaemonService
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:225:17-80
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:225:25-77
+receiver#cn.jpush.android.service.PushReceiver
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:232:9-251:20
+	android:enabled
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:234:13-35
+	android:exported
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:235:13-37
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:233:13-65
+intent-filter#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY+com.babuwyt.daili
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:236:13-239:29
+	android:priority
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:236:28-51
+action#cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:237:17-94
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:237:25-91
+intent-filter#android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:240:13-243:29
+action#android.intent.action.USER_PRESENT
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:241:17-77
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:241:25-74
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:242:17-79
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:242:25-76
+intent-filter#android.intent.action.PACKAGE_ADDED+android.intent.action.PACKAGE_REMOVED
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:245:13-250:29
+action#android.intent.action.PACKAGE_ADDED
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:246:17-78
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:246:25-75
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:247:17-80
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:247:25-77
+data
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:249:17-50
+	android:scheme
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:249:23-47
+receiver#cn.jpush.android.service.AlarmReceiver
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:254:9-256:40
+	android:exported
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:256:13-37
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:255:13-66
+receiver#com.babuwyt.daili.utils.jpush.MyReceiver
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:260:9-271:20
+	android:enabled
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:262:13-35
+	android:name
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:261:13-51
 intent-filter#cn.jpush.android.intent.CONNECTION+cn.jpush.android.intent.MESSAGE_RECEIVED+cn.jpush.android.intent.NOTIFICATION_OPENED+cn.jpush.android.intent.NOTIFICATION_RECEIVED+cn.jpush.android.intent.REGISTRATION+com.babuwyt.daili
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:245:13-252:29
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:263:13-270:29
 action#cn.jpush.android.intent.REGISTRATION
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:246:17-79
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:264:17-79
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:246:25-76
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:264:25-76
 action#cn.jpush.android.intent.MESSAGE_RECEIVED
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:247:17-83
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:265:17-83
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:247:25-80
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:265:25-80
 action#cn.jpush.android.intent.NOTIFICATION_RECEIVED
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:248:17-88
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:266:17-88
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:248:25-85
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:266:25-85
 action#cn.jpush.android.intent.NOTIFICATION_OPENED
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:249:17-86
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:267:17-86
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:249:25-83
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:267:25-83
 action#cn.jpush.android.intent.CONNECTION
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:250:17-77
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:268:17-77
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:250:25-74
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:268:25-74
 receiver#com.babuwyt.daili.utils.jpush.MyJPushMessageReceiver
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:256:9-261:20
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:274:9-279:20
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:256:19-69
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:274:19-69
 intent-filter#cn.jpush.android.intent.RECEIVE_MESSAGE+com.babuwyt.daili
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:257:13-260:29
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:275:13-278:29
 action#cn.jpush.android.intent.RECEIVE_MESSAGE
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:258:17-82
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:276:17-82
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:258:25-79
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:276:25-79
 meta-data#JPUSH_CHANNEL
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:263:9-265:49
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:281:9-283:49
 	android:value
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:265:13-46
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:283:13-46
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:264:13-41
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:282:13-41
 meta-data#JPUSH_APPKEY
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:266:9-268:56
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:284:9-286:56
 	android:value
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:268:13-53
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:286:13-53
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:267:13-40
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:285:13-40
 meta-data#com.amap.api.v2.apikey
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:271:9-274:21
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:289:9-292:21
 	android:value
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:273:13-61
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:291:13-61
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:272:13-50
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:290:13-50
 service#com.amap.api.location.APSService
-ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:275:9-67
+ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:293:9-67
 	android:name
-		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:275:18-65
+		ADDED from E:\git_resource\chedui\src\main\AndroidManifest.xml:293:18-65
 uses-sdk
 INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml

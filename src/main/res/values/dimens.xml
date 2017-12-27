@@ -12,4 +12,5 @@
 
 
     <dimen name="Default_Text_Size">14sp</dimen>
+    <dimen name="defautl_navigationbar_size">45dp</dimen>
 </resources>
