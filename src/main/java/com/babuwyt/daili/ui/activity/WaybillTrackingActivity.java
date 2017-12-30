@@ -1,5 +1,6 @@
 package com.babuwyt.daili.ui.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.babuwyt.daili.R;
 import com.babuwyt.daili.adapter.WayBillAdapter;
@@ -24,6 +26,7 @@ import com.liaoinstan.springview.container.DefaultHeader;
 import com.liaoinstan.springview.widget.SpringView;
 
 import org.xutils.view.annotation.ContentView;
+import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 
 import java.util.ArrayList;
@@ -37,6 +40,8 @@ public class WaybillTrackingActivity extends BaseActivity{
     Toolbar toolbar;
     @ViewInject(R.id.recyclerview)
     RecyclerView recyclerview;
+    @ViewInject(R.id.layout_search)
+    LinearLayout layout_search;
     @ViewInject(R.id.springview)
     SpringView springview;
     //    @ViewInject(R.id.load_more_list_view_container)
@@ -83,6 +88,16 @@ public class WaybillTrackingActivity extends BaseActivity{
     }
 
 
+    @Event(value = {R.id.layout_search})
+    private void getE(View v){
+        switch (v.getId()){
+            case R.id.layout_search:
+                Intent intent=new Intent(this,SearchWaybillOrderActivity.class);
+                startActivity(intent);
+                break;
+        }
+    }
+
     private void getHttpRefresh() {
         pageNum=0;
         ArrayList<String> list = new ArrayList<String>();
@@ -94,7 +109,7 @@ public class WaybillTrackingActivity extends BaseActivity{
             @Override
             public void onSuccess(WaybillTrackingBean baseBean) {
                 loadingDialog.dissDialog();
-                Log.d("22222222",new Gson().toJson(baseBean));
+                Log.d("==baseBean==",new Gson().toJson(baseBean));
                 if (baseBean.isSuccess()) {
                     if (mList != null) {
                         mList.clear();
@@ -111,6 +126,7 @@ public class WaybillTrackingActivity extends BaseActivity{
             public void onError(Throwable ex, boolean isOnCallback) {
                 loadingDialog.dissDialog();
                 springview.onFinishFreshAndLoad();
+                Log.d("==baseBean==",ex+"");
             }
         });
     }

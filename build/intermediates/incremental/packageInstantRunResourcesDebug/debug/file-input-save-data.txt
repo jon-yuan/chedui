@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 27 15:35:19 CST 2017
+#Sat Dec 30 15:50:50 CST 2017
 0.baseType=DIRECTORY
 0.base=E\:\\git_resource\\chedui\\build\\intermediates\\assets\\debug
 0.path=style.data

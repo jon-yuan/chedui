@@ -27,13 +27,34 @@
             android:textSize="12sp"
             android:textColor="@color/black_333"
             android:paddingVertical="2dp"/>
-        <TextView
-            android:id="@+id/tv_luxian"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="@color/black_333"
-            android:paddingVertical="2dp"/>
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_luxian_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+
+                android:textColor="@color/black_333"
+                android:paddingVertical="2dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/icon_xianlu_jiantou" />
+            <TextView
+                android:id="@+id/tv_luxian_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+
+                android:textColor="@color/black_333"
+                android:paddingVertical="2dp"/>
+        </LinearLayout>
         <TextView
             android:id="@+id/tv_time"
             android:layout_width="wrap_content"

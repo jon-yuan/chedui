@@ -1,4 +1,4 @@
-#Wed Dec 27 16:42:18 CST 2017
+#Sat Dec 30 15:51:08 CST 2017
 path.1=classes.dex
 path.0=classes.dex
 renamed.5=classes6.dex
@@ -7,12 +7,12 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\73
-base.4=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\70
-base.3=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\72
-base.2=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\69
-base.1=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\68
-base.0=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\71
+base.5=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+base.4=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.3=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.2=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+base.1=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+base.0=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex

@@ -56,10 +56,41 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/layout_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_gray_line"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/siji_search_grayline_bg_shape">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/icon_search"
+                        android:drawablePadding="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:hint="@string/please_yundahao"
+                        android:singleLine="true"
+                        android:textColor="@color/black_666"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
 
             <com.liaoinstan.springview.widget.SpringView
                 android:id="@+id/springview"
+                android:layout_below="@+id/layout_search"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <android.support.v7.widget.RecyclerView

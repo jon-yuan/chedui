@@ -95,7 +95,7 @@ public class WaybillTrackingAdapter extends BaseAdapter {
 
 
         holder.tv_name.setText(mList.get(i).getFdrivername());
-        holder.tv_yundan.setText(mList.get(i).getFsendcarno());
+        holder.tv_yundan.setText(mList.get(i).getFownersendcarno());
         switch (mList.get(i).getFtaskstate()) {
             case 1:
                 holder.tv_state.setText("装货已签到");

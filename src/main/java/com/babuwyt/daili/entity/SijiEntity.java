@@ -5,17 +5,37 @@ import com.babuwyt.daili.utils.util.JsonResponseParser;
 
 import org.xutils.http.annotation.HttpResponse;
 
+import java.io.Serializable;
+
 /**
  * Created by lenovo on 2017/8/30.
  */
 @HttpResponse(parser = JsonResponseParser.class)
-public class SijiEntity {
+public class SijiEntity implements Serializable{
     private String fdriverid;
     private String fdrivername;
     private String carid;
     private String fplateno;
     private String fphonenum;
     private String fdrivenumber;
+    private int fispay;//2结算司机  3非结算司机
+    private boolean isselect;
+
+    public boolean isIsselect() {
+        return isselect;
+    }
+
+    public void setIsselect(boolean isselect) {
+        this.isselect = isselect;
+    }
+
+    public int getFispay() {
+        return fispay;
+    }
+
+    public void setFispay(int fispay) {
+        this.fispay = fispay;
+    }
 
     public String getFdrivenumber() {
         return fdrivenumber;

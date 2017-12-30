@@ -158,9 +158,9 @@ public class RatesDialog extends Dialog implements View.OnClickListener {
 //        youka = new BigDecimal(String.valueOf(params.getFacceptratio().divide(new BigDecimal(100))));
 //        jiangli = new BigDecimal(String.valueOf(params.getFreturnratio().divide(new BigDecimal(100))));
 //        kouchu = new BigDecimal(String.valueOf(params.getDiscountratio().divide(new BigDecimal(100))));
-        youka = params.getFacceptratio();
-        jiangli = params.getFreturnratio();
-        kouchu = params.getDiscountratio();
+//        youka = params.getFacceptratio();
+//        jiangli = params.getFreturnratio();
+//        kouchu = params.getDiscountratio();
     }
 
     /**

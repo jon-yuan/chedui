@@ -20,10 +20,19 @@ public class OrderDetailsBaseBean {
     private long factuptime;
     private int ftaskState;
     private long farrivetime;
+    private String fRemark;
     private ArrayList<LoadpickEntity> loadpick;
     private ArrayList<pictureEntity> picturelist;
     private ArrayList<Tworktrack> worktrack;
     private ArrayList<TOrderGoods> httpTOrderGoodRes;
+
+    public String getFremark() {
+        return fRemark;
+    }
+
+    public void setFremark(String fremark) {
+        this.fRemark = fremark;
+    }
 
     public long getFarrivetime() {
         return farrivetime;

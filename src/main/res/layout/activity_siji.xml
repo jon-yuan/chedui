@@ -53,33 +53,6 @@
             android:src="@drawable/ic_launcher_background" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layout_address"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:gravity="center_vertical|left"
-        android:orientation="horizontal"
-        android:visibility="gone"
-        android:paddingHorizontal="30dp">
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/icon_fangzi" />
-
-        <TextView
-            android:id="@+id/tv_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="提货地西安市港务区港务大道1201-1"
-            android:textColor="@color/black_666"
-            android:textSize="13sp" />
-    </LinearLayout>
-
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"

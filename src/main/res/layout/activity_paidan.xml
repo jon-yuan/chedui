@@ -435,10 +435,10 @@
             android:id="@+id/tv_xiayibu"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@drawable/login_btn_bg_shape"
+            android:background="@drawable/background_blue_image_shape"
             android:gravity="center"
             android:textSize="14sp"
-            android:textColor="@color/black_333"
+            android:textColor="@color/white"
             android:layout_marginTop="10dp"
             android:text="@string/xiayibu"/>
 

@@ -132,7 +132,7 @@ public class MyOrderActivity extends BaseActivity implements MyOrderAdapter.OnRe
 
         mManager = new LinearLayoutManager(this);
         recyclerview.setLayoutManager(mManager);
-        mAdapter=new MyOrderAdapter(mDatas);
+        mAdapter=new MyOrderAdapter(this,mDatas);
         recyclerview.setAdapter(mAdapter);
         mAdapter.setOnItemClickListener(this);
 

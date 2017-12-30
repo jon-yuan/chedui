@@ -79,6 +79,8 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
     LinearLayout linear_setting;
     @ViewInject(R.id.linear_jiance)
     LinearLayout linear_jiance;
+    @ViewInject(R.id.layout_search)
+    LinearLayout layout_search;
     /**
      * 下拉刷新
      */
@@ -112,7 +114,6 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
         doSthRefresh();
         getNum();
         getVersion();
-
     }
 
     /**
@@ -141,6 +142,12 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
         });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        doSthRefresh1();
+    }
+
     /**
      * 接口调用
      */
@@ -156,15 +163,46 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
             public void onSuccess(MainBean result) {
                 super.onSuccess(result);
                 loadingDialog.dissDialog();
+                mDatas.clear();
                 if (result.isSuccess()) {
                     if (mDatas != null) {
-                        mDatas.clear();
                         mDatas.addAll(result.getObj());
-                        mAdapter.notifyDataSetChanged();
                     }
                 }else {
                     UHelper.showToast(MainActivity.this,result.getMsg());
                 }
+                mAdapter.notifyDataSetChanged();
+                springview.onFinishFreshAndLoad();
+            }
+
+            @Override
+            public void onError(Throwable ex, boolean isOnCallback) {
+                super.onError(ex, isOnCallback);
+                loadingDialog.dissDialog();
+                springview.onFinishFreshAndLoad();
+            }
+        });
+    }
+    private void doSthRefresh1() {
+        pageNum = 0;
+        ArrayList<String> list = new ArrayList<String>();
+        list.add(pageNum + "");
+        list.add(SessionManager.getInstance().getUser().getFid());
+        loadingDialog.showDialog();
+        XUtil.GetPing(BaseURL.SELECTPAGE, list, new MyCallBack<MainBean>() {
+            @Override
+            public void onSuccess(MainBean result) {
+                super.onSuccess(result);
+                loadingDialog.dissDialog();
+                mDatas.clear();
+                if (result.isSuccess()) {
+                    if (mDatas != null) {
+                        mDatas.addAll(result.getObj());
+                    }
+                }else {
+                    UHelper.showToast(MainActivity.this,result.getMsg());
+                }
+                mAdapter.notifyDataSetChanged();
                 springview.onFinishFreshAndLoad();
             }
 
@@ -187,7 +225,6 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
             @Override
             public void onSuccess(MainBean result) {
                 super.onSuccess(result);
-                loadingDialog.dissDialog();
                 if (result.isSuccess()) {
                     if (mDatas != null) {
                         mDatas.addAll(result.getObj());
@@ -197,6 +234,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
                     UHelper.showToast(MainActivity.this,result.getMsg());
                 }
                 springview.onFinishFreshAndLoad();
+                loadingDialog.dissDialog();
             }
 
             @Override
@@ -226,12 +264,12 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
 //        tv_hehuoren.setText("您是万运通第" + SessionManager.getInstance().getUser().getFforwardercode() + "个合伙人");
     }
 
-    @Event(value = {R.id.linear_jiance,R.id.tv_yundangenzong, R.id.linear_siji, R.id.linear_yundan, R.id.linear_tuiguang, R.id.linear_setting})
+    @Event(value = {R.id.linear_jiance,R.id.tv_yundangenzong, R.id.linear_siji, R.id.linear_yundan, R.id.linear_tuiguang, R.id.linear_setting,R.id.layout_search})
     private void gete(View view) {
         switch (view.getId()) {
-//            case R.id.relayout_msg:
-//                jumpto(MsgActivity.class);
-//                break;
+            case R.id.layout_search:
+                jumpto(SearchMainOrderActivity.class);
+                break;
             case R.id.tv_yundangenzong:
                 jumpto(WaybillTrackingActivity.class);
                 break;
@@ -292,12 +330,9 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
 
     @Override
     public void CallBackQupaiche(int i) {
-        intent.setClass(MainActivity.this, MySijiActivity.class);
-        intent.putExtra(MySijiActivity.MYSIJI_TYPE, MySijiActivity.SELECTSIJI);
-        intent.putExtra(MySijiActivity.MYSIJI_ADDRESS, mDatas.get(i).getFfromaddress());
+        intent.setClass(MainActivity.this, DispatchCarActivity.class);
         intent.putExtra("fid", mDatas.get(i).getFid());
-        intent.putExtra("shijian", mDatas.get(i).getFpickuptime());
-        intent.putExtra("xianlu", mDatas.get(i).getFfromaddress() + mDatas.get(i).getFtoaddress());
+        intent.putExtra("fendcarno", mDatas.get(i).getFownersendcarno());
         startActivity(intent);
     }
 
@@ -305,6 +340,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
     public void onItemClick(int i) {
         intent.setClass(MainActivity.this, DispatchCarActivity.class);
         intent.putExtra("fid", mDatas.get(i).getFid());
+        intent.putExtra("fendcarno", mDatas.get(i).getFownersendcarno());
         startActivity(intent);
     }
 

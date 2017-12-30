@@ -182,6 +182,7 @@
     <string name="chepaihao1">车牌号:</string>
     <string name="select">选择</string>
     <string name="orderno">订单号</string>
+    <string name="orderno1">订单号:</string>
     <string name="renwushuoming">任务说明:</string>
     <string name="jihuadaodashijian">计划到达时间:</string>
     <string name="shouqi">收起</string>
@@ -197,4 +198,23 @@
     <string name="xie1">卸:</string>
     <string name="xie">卸</string>
     <string name="ti">提</string>
+    <string name="zhusiji">主司机</string>
+    <string name="fusiji">副司机</string>
+    <string name="dianhua1">电话:</string>
+    <string name="next">下一步</string>
+    <string name="please_select_siji">请选择主司机</string>
+    <string name="please_input_baojia">请输入报价</string>
+    <string name="prompt">提示</string>
+    <string name="maketrue_paiche">确定派车</string>
+    <string name="cancal">取消</string>
+    <string name="ok">好</string>
+    <string name="please_input_yundanhao">请输入运单号/车牌/姓名搜索</string>
+    <string name="callback">返回</string>
+    <string name="please_yundahao">请输入运单号</string>
+    <string name="isdriverid_selected">该司机已选择</string>
+    <string name="daodashijian1">到达时间:</string>
+    <string name="add_zsiji">添加主司机</string>
+    <string name="add_fsiji">添加副司机</string>
+    <string name="isselected">已选择</string>
+    <string name="change">更改</string>
 </resources>

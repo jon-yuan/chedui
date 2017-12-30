@@ -30,6 +30,7 @@ import com.babuwyt.daili.ui.views.RecycleViewDivider;
 import com.babuwyt.daili.utils.util.DateUtils;
 import com.babuwyt.daili.utils.util.UHelper;
 import com.babuwyt.daili.utils.util.XUtil;
+import com.google.gson.Gson;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -219,7 +220,7 @@ public class OrderDetailsActivity extends BaseActivity {
                 xie += 1;
             }
         }
-        tv_beizhu.setText(ti + "提" + xie + "卸");
+        tv_beizhu.setText(baseBean.getFremark());
         for (pictureEntity entity : baseBean.getPicture()) {
             if (entity.getFstate() == 1) {
                 zhList.add(entity);
@@ -240,6 +241,7 @@ public class OrderDetailsActivity extends BaseActivity {
             @Override
             public void onSuccess(OrderDetailsBean baseBean) {
                 loadingDialog.dissDialog();
+                Log.d("===================",new Gson().toJson(baseBean));
                 if (baseBean.isSuccess()) {
                     setData(baseBean.getObj());
                 }

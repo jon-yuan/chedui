@@ -81,6 +81,15 @@ public class MySijiAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         holder1.tv_name.setText(mList.get(position).getFdrivername());
         holder1.tv_dianhua.setText(context.getString(R.string.dianhua)+": "+mList.get(position).getFphonenum());
         holder1.tv_chepaihao.setText(context.getString(R.string.chepaihao)+": "+mList.get(position).getFplateno());
+        if (mList.get(position).isIsselect()){
+            holder1.tv_select.setEnabled(false);
+            holder1.tv_select.setText(context.getString(R.string.isselected));
+        }else {
+            holder1.tv_select.setEnabled(true);
+            holder1.tv_select.setText(context.getString(R.string.select));
+        }
+
+
     }
 
     @Override

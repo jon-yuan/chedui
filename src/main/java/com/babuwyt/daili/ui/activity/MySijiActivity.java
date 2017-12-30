@@ -2,6 +2,7 @@ package com.babuwyt.daili.ui.activity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -17,6 +18,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,10 +77,6 @@ public class MySijiActivity extends BaseActivity implements MySijiAdapter.MySiji
     Toolbar toolbar;
     @ViewInject(R.id.recyclerview)
     RecyclerView recyclerview;
-    @ViewInject(R.id.layout_address)
-    LinearLayout layout_address;
-    @ViewInject(R.id.tv_address)
-    TextView tv_address;
     @ViewInject(R.id.tv_search)
     TextView tv_search;
     @ViewInject(R.id.et_search)
@@ -90,14 +88,12 @@ public class MySijiActivity extends BaseActivity implements MySijiAdapter.MySiji
     private PopupWindow popup;
     private View contentView;
     private Intent intent;
-    private String fid;//订单ID
-    private String shijian;//订单ID
-    private String xianlu;//订单ID
     private ArrayList<SijiEntity> mList;
-    private RatesDialog dialog;
-    private MakeTrueDialog makeTrueDialog;
     private String phonenum;
     private int pageName;
+
+    private String fdriverid0;
+    private String fdriverid1;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,10 +104,6 @@ public class MySijiActivity extends BaseActivity implements MySijiAdapter.MySiji
     }
 
     private void initview() {
-        dialog = new RatesDialog(this);
-        dialog.setCallBack(this);
-        makeTrueDialog = new MakeTrueDialog(this);
-        makeTrueDialog.setCommit(this);
         manager = new LinearLayoutManager(this);
         recyclerview.setLayoutManager(manager);
         mAdapter = new MySijiAdapter(this, show);
@@ -126,17 +118,12 @@ public class MySijiActivity extends BaseActivity implements MySijiAdapter.MySiji
     private void init() {
         intent = new Intent();
         show = getIntent().getIntExtra(MYSIJI_TYPE, 0);
+        fdriverid0=getIntent().getStringExtra("fdriverid0");
+        fdriverid1=getIntent().getStringExtra("fdriverid1");
         if (show == LOOKSIJI) {
             title = getString(R.string.my_siji);
-            layout_address.setVisibility(View.GONE);
         } else {
-            address = getIntent().getStringExtra(MYSIJI_ADDRESS);
-            fid = getIntent().getStringExtra("fid");
-            shijian = getIntent().getStringExtra("shijian");
-            xianlu = getIntent().getStringExtra("xianlu");
             title = getString(R.string.select_siji);
-            layout_address.setVisibility(View.VISIBLE);
-            tv_address.setText(address);
         }
         toolbar.setTitle(title);
         toolbar.setNavigationIcon(R.drawable.goback_black);
@@ -275,8 +262,10 @@ public class MySijiActivity extends BaseActivity implements MySijiAdapter.MySiji
 
     @Override
     public void CallBackSelect(int i) {
-
-        getSystem(mList.get(i));
+        Intent intent=new Intent();
+        intent.putExtra("sijientity",mList.get(i));
+        setResult(Activity.RESULT_OK,intent);
+        finish();
     }
 
     @Event(value = {R.id.tv_search})
@@ -298,13 +287,14 @@ public class MySijiActivity extends BaseActivity implements MySijiAdapter.MySiji
             @Override
             public void onSuccess(SijiListBean sijiListBean) {
                 loadingDialog.dissDialog();
+                mList.clear();
                 if (sijiListBean.isSuccess()) {
-                    mList.clear();
                     mList.addAll(sijiListBean.getObj());
-                    mAdapter.notifyDataSetChanged();
+                    isSelect();
                 } else {
                     UHelper.showToast(MySijiActivity.this, sijiListBean.getMsg());
                 }
+                mAdapter.notifyDataSetChanged();
                 springview.onFinishFreshAndLoad();
             }
             @Override
@@ -314,7 +304,14 @@ public class MySijiActivity extends BaseActivity implements MySijiAdapter.MySiji
             }
         });
     }
-
+    private void isSelect(){
+        for (int i=0;i<mList.size();i++){
+            if (mList.get(i).getFdriverid().equalsIgnoreCase(fdriverid0) || mList.get(i).getFdriverid().equalsIgnoreCase(fdriverid1)){
+                mList.get(i).setIsselect(true);
+            }
+        }
+        mAdapter.notifyDataSetChanged();
+    }
     private void getHttpLoadMore() {
         pageName++;
         Map<String, String> map = new HashMap<String, String>();
@@ -341,53 +338,20 @@ public class MySijiActivity extends BaseActivity implements MySijiAdapter.MySiji
             }
         });
     }
-
-    private void getSystem(final SijiEntity entity) {
-        loadingDialog.showDialog();
-        XUtil.GetPing(BaseURL.SYSTEM_PARAMS, new ArrayList<String>(), new MyCallBack<SystemPramerBean>() {
-            @Override
-            public void onSuccess(SystemPramerBean result) {
-                super.onSuccess(result);
-                loadingDialog.dissDialog();
-                if (result.isSuccess()) {
-                    SystemPramer pramer = result.getObj();
-                    pramer.setFtruckid(entity.getCarid());
-                    pramer.setFmanageid(entity.getFdriverid());
-                    pramer.setFid(fid);
-                    pramer.setSijiname(entity.getFdrivername());
-                    pramer.setShijian(shijian);
-                    pramer.setXianlu(xianlu);
-                    dialog.setParams(pramer);
-                    dialog.showDialog();
-                }
-            }
-
-            @Override
-            public void onError(Throwable ex, boolean isOnCallback) {
-                super.onError(ex, isOnCallback);
-                loadingDialog.dissDialog();
-            }
-        });
-    }
-
     @SuppressLint("NewApi")
     @Override
     public void callBack(SystemPramer pramer) {
-        dialog.dissDialog();
-        makeTrueDialog.showDialog();
-        makeTrueDialog.setData(pramer);
+
     }
 
     @Override
     public void commit(SystemPramer pramer) {
-        makeTrueDialog.dissDialog();
         getCommit(pramer);
 
     }
 
     private void getCommit(SystemPramer pramer) {
 
-        Log.d("参数", new Gson().toJson(pramer));
         RequestParams params = new RequestParams(BaseURL.PUBLISHSENDCAR);
         params.setAsJsonContent(true);
         params.setBodyContent(new Gson().toJson(pramer));

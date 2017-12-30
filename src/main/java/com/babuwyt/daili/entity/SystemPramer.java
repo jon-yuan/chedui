@@ -11,9 +11,9 @@ import org.xutils.http.annotation.HttpResponse;
 
 @HttpResponse(parser = JsonResponseParser.class)
 public class SystemPramer {
-    private int facceptratio;//默认比例系数
-    private int freturnratio;//油卡奖励系数
-    private int discountratio;//现金扣除系数
+    private String facceptratio;//默认比例系数
+    private String freturnratio;//油卡奖励系数
+    private String discountratio;//现金扣除系数
 
     private String userid;
     private String fid;
@@ -178,27 +178,27 @@ public class SystemPramer {
         this.ftotalCost = ftotalCost;
     }
 
-    public int getFacceptratio() {
+    public String getFacceptratio() {
         return facceptratio;
     }
 
-    public void setFacceptratio(int facceptratio) {
+    public void setFacceptratio(String facceptratio) {
         this.facceptratio = facceptratio;
     }
 
-    public int getFreturnratio() {
+    public String getFreturnratio() {
         return freturnratio;
     }
 
-    public void setFreturnratio(int freturnratio) {
+    public void setFreturnratio(String freturnratio) {
         this.freturnratio = freturnratio;
     }
 
-    public int getDiscountratio() {
+    public String getDiscountratio() {
         return discountratio;
     }
 
-    public void setDiscountratio(int discountratio) {
+    public void setDiscountratio(String discountratio) {
         this.discountratio = discountratio;
     }
 

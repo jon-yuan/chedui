@@ -105,6 +105,14 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".ui.activity.SearchWaybillOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SearchMainOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".ui.activity.OrderDetailsActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"/>
@@ -132,7 +140,7 @@
             android:windowSoftInputMode="stateHidden|adjustPan"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.activity.PaiDanActivity"
+            android:name=".ui.activity.BaojiaActivity"
             android:launchMode="singleTop"
             android:windowSoftInputMode="stateHidden|adjustPan"
             android:screenOrientation="portrait"/>

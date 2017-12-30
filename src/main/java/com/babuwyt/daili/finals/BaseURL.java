@@ -12,9 +12,10 @@ public class BaseURL {
     /**
      * 请求地址
      */
-//    public static final String BASE_URL = "http://192.168.2.122:8050/";//黄鹏波
-    public static final String BASE_URL = "http://www.babuwyt.com:8080/tmsapi/";//测试环境
-//    public static final String BASE_URL = "http://192.168.2.41:8080/tmsapi/";
+//    public static final String BASE_URL = "http://192.168.2.122:8091/";//黄鹏波
+//    public static final String BASE_URL = "http://www.babuwyt.com:8080/tmsapi/";//测试环境
+//    public static final String BASE_URL = "http://192.168.2.92:8080/tmsapi/";//测试环境
+    public static final String BASE_URL = "http://192.168.2.41:8080/tmsapi/";
 //    public static final String BASE_URL = "http://123.206.75.242:8090/tmsapi/";//测试环境
 //    public static final String BASE_URL = "http://192.168.2.71:8090/tmsapi/";//测试环境
 //    public static final String BASE_URL = "http://192.168.2.224:8080/tmsapi/";//测试环境
@@ -29,6 +30,7 @@ public class BaseURL {
      * 首页数据
      */
     public static final String SELECTPAGE = BASE_URL + "partner/selectpage";
+    public static final String SELECTPAGES = BASE_URL + "partner/selectpages";
 
     /**
      * 派车单详情(已派车的订单)
@@ -43,6 +45,7 @@ public class BaseURL {
      * 运单列表
      */
     public static final String FINDCAR = BASE_URL + "partner/findcar";
+    public static final String FINDCARS = BASE_URL + "partner/findcars";
     /**
      * 我的司机
      */
