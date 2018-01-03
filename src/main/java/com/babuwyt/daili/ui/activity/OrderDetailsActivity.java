@@ -1,6 +1,7 @@
 package com.babuwyt.daili.ui.activity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
@@ -79,11 +80,20 @@ public class OrderDetailsActivity extends BaseActivity {
     @ViewInject(R.id.qianshou_gridview)
     CustomGridView qianshou_gridview;
 
+    @ViewInject(R.id.xiehuo_gridview)
+    CustomGridView xiehuo_gridview;
+    @ViewInject(R.id.image_xiehuo)
+    ImageView image_xiehuo;
+
 
     private OrderDetailsAdapter zhAdapter;
     private ArrayList<pictureEntity> zhList;
     private OrderDetailsAdapter qsAdapter;
     private ArrayList<pictureEntity> qsList;
+
+    private OrderDetailsAdapter xhAdapter;
+    private ArrayList<pictureEntity> xhList;
+
     private addressAdapter addressAdapter;
     private ArrayList<LoadpickEntity> address;
 
@@ -91,6 +101,7 @@ public class OrderDetailsActivity extends BaseActivity {
     private String fwonid;
     private boolean zhShow = true;
     private boolean qsShow = true;
+    private boolean xhShow = true;
     private boolean stateShow = true;
 
     @Override
@@ -129,9 +140,13 @@ public class OrderDetailsActivity extends BaseActivity {
         qsAdapter = new OrderDetailsAdapter(this);
         qsAdapter.setShow(qsShow);
 
+        xhAdapter = new OrderDetailsAdapter(this);
+        xhAdapter.setShow(xhShow);
+
 
         zhList = new ArrayList<pictureEntity>();
         qsList = new ArrayList<pictureEntity>();
+        xhList = new ArrayList<pictureEntity>();
 
 
         zhAdapter.setmList(zhList);
@@ -156,6 +171,19 @@ public class OrderDetailsActivity extends BaseActivity {
                 intent.setClass(OrderDetailsActivity.this,LookBigPictureActivity.class);
                 intent.putExtra("index",i);
                 intent.putExtra("list",qsList);
+                startActivity(intent);
+            }
+        });
+
+        xhAdapter.setmList(xhList);
+        xiehuo_gridview.setAdapter(xhAdapter);
+        xiehuo_gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent=new Intent();
+                intent.setClass(OrderDetailsActivity.this,LookBigPictureActivity.class);
+                intent.putExtra("index",i);
+                intent.putExtra("list",xhList);
                 startActivity(intent);
             }
         });
@@ -224,12 +252,15 @@ public class OrderDetailsActivity extends BaseActivity {
         for (pictureEntity entity : baseBean.getPicture()) {
             if (entity.getFstate() == 1) {
                 zhList.add(entity);
-            } else {
+            } else if (entity.getFstate() == 2){
                 qsList.add(entity);
+            }else if (entity.getFstate() == 3){
+                xhList.add(entity);
             }
         }
         zhAdapter.notifyDataSetChanged();
         qsAdapter.notifyDataSetChanged();
+        xhAdapter.notifyDataSetChanged();
     }
 
     private void getHttp() {
@@ -254,7 +285,7 @@ public class OrderDetailsActivity extends BaseActivity {
         });
     }
 
-    @Event(value = {R.id.image_qianshou, R.id.image_zhuangzai, R.id.layout_state})
+    @Event(value = {R.id.image_qianshou, R.id.image_zhuangzai, R.id.layout_state,R.id.image_xiehuo})
     private void gete(View v) {
         switch (v.getId()) {
             case R.id.image_zhuangzai:
@@ -272,6 +303,14 @@ public class OrderDetailsActivity extends BaseActivity {
                     qsShow = true;
                 }
                 qsAdapter.setShow(qsShow);
+                break;
+                case R.id.image_xiehuo:
+                if (xhShow) {
+                    xhShow = false;
+                } else {
+                    xhShow = true;
+                }
+                xhAdapter.setShow(xhShow);
                 break;
             case R.id.layout_state:
                 Intent intent = new Intent();

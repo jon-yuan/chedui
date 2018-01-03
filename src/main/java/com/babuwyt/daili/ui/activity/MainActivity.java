@@ -357,8 +357,8 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
             public void onSuccess(NumBean result) {
                 super.onSuccess(result);
                 if (result.isSuccess()) {
-                    tv_ordernum.setText("订单：" + result.getObj().getOrdercount());
-                    tv_sijinum.setText("司机：" + result.getObj().getDrivercount());
+                    tv_ordernum.setText(getString(R.string.order1) + result.getObj().getOrdercount());
+                    tv_sijinum.setText(getString(R.string.siji1) + result.getObj().getDrivercount());
                 }
             }
             @Override
@@ -419,7 +419,6 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
      */
     private File filepath;
     private void DownLoadFile(String url) {
-        UHelper.showToast(this,"下载apk");
         if (Environment.getExternalStorageState().equals(
                 Environment.MEDIA_MOUNTED)) {
             // 获取SD卡的目录
@@ -477,6 +476,4 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
         }
         startActivity(intent);
     }
-
-
 }

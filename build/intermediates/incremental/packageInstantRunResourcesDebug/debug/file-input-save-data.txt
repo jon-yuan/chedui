@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Sat Dec 30 15:50:50 CST 2017
-0.baseType=DIRECTORY
-0.base=E\:\\git_resource\\chedui\\build\\intermediates\\assets\\debug
-0.path=style.data
-0.set=ASSET
-count=1

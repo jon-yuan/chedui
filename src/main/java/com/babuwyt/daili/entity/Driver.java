@@ -12,9 +12,10 @@ import org.xutils.http.annotation.HttpResponse;
 public class Driver {
     private String fsendcarno;
     private String drivername;
+    private String fdrivername;
     private String fplateno;
     private String ftel;
-
+    private String fftel;
     public String getFsendcarno() {
         return fsendcarno;
     }
@@ -45,6 +46,22 @@ public class Driver {
 
     public void setFtel(String ftel) {
         this.ftel = ftel;
+    }
+
+    public String getFdrivername() {
+        return fdrivername;
+    }
+
+    public void setFdrivername(String fdrivername) {
+        this.fdrivername = fdrivername;
+    }
+
+    public String getFftel() {
+        return fftel;
+    }
+
+    public void setFftel(String fftel) {
+        this.fftel = fftel;
     }
     /**
      * "fsendcarno": "DD201709010001",

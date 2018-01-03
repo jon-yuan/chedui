@@ -217,4 +217,10 @@
     <string name="add_fsiji">添加副司机</string>
     <string name="isselected">已选择</string>
     <string name="change">更改</string>
+    <string name="order1">订单:</string>
+    <string name="linkphone">联系电话:</string>
+    <string name="yipaiche">已派车</string>
+    <string name="xiehuozhaopian">卸货照片</string>
+    <string name="fusiji1">副司机:</string>
+    <string name="zhuanghuozhaopian">装货照片</string>
 </resources>

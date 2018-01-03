@@ -40,6 +40,8 @@ public class StateGenzongActivity extends BaseActivity {
     TextView tv_state;
     TextView tv_siji;
     TextView tv_dianhua;
+    TextView tv_fsiji;
+    TextView tv_fdianhua;
     LinearLayout layout_heard;
     @ViewInject(R.id.layout_driver)
     LinearLayout layout_driver;
@@ -82,6 +84,8 @@ public class StateGenzongActivity extends BaseActivity {
         tv_siji=header.findViewById(R.id.tv_siji);
         tv_dianhua=header.findViewById(R.id.tv_dianhua);
         layout_heard=header.findViewById(R.id.layout_heard);
+        tv_fsiji=header.findViewById(R.id.tv_fsiji);
+        tv_fdianhua=header.findViewById(R.id.tv_fdianhua);
         return header;
     }
     private View footer(){
@@ -111,7 +115,6 @@ public class StateGenzongActivity extends BaseActivity {
             public void onError(Throwable ex, boolean isOnCallback) {
                 super.onError(ex, isOnCallback);
                 loadingDialog.dissDialog();
-                Log.d("==合伙人==",ex+"");
                 UHelper.showToast(StateGenzongActivity.this,getString(R.string.NET_ERROR));
             }
         });
@@ -121,10 +124,19 @@ public class StateGenzongActivity extends BaseActivity {
         if (mdriver==null){
             return;
         }
-        tv_dingdan.setText("订单"+mdriver.getFsendcarno());
-        tv_dianhua.setText("联系电话:"+mdriver.getFtel());
-        tv_siji.setText("司机："+mdriver.getDrivername()+"  车牌号："+mdriver.getFplateno());
-        tv_state.setText("已派车");
+        tv_dingdan.setText(getString(R.string.order1)+mdriver.getFsendcarno());
+        tv_dianhua.setText(getString(R.string.linkphone)+mdriver.getFtel());
+        tv_siji.setText(getString(R.string.siji1)+mdriver.getDrivername()+"   "+getString(R.string.chepaihao)+mdriver.getFplateno());
+        tv_fsiji.setText(getString(R.string.fusiji1)+mdriver.getFdrivername());
+        tv_fdianhua.setText(getString(R.string.linkphone)+mdriver.getFftel());
+        if (TextUtils.isEmpty(mdriver.getFdrivername()) || mdriver.getFdrivername().equalsIgnoreCase("null")){
+            tv_fsiji.setVisibility(View.GONE);
+            tv_fdianhua.setVisibility(View.GONE);
+        }else {
+            tv_fsiji.setVisibility(View.VISIBLE);
+            tv_fdianhua.setVisibility(View.VISIBLE);
+        }
+        tv_state.setText(getString(R.string.yipaiche));
         tv_wancheng.setEnabled(state);
         if (TextUtils.isEmpty(mdriver.getDrivername())){
             layout_heard.setVisibility(View.GONE);

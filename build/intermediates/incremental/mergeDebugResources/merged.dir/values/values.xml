@@ -899,6 +899,7 @@
     <string name="jihuadaodashijian">计划到达时间:</string>
     <string name="jihuatihuoshijian">计划提货时间:</string>
     <string name="lianxiren">联系人:</string>
+    <string name="linkphone">联系电话:</string>
     <string name="loading_examine">装载照片</string>
     <string name="loctiontime">定位时间:</string>
     <string name="login">登录</string>
@@ -926,6 +927,7 @@
     <string name="no_data">还没有数据</string>
     <string name="ok">好</string>
     <string name="onclickisexit">再点击一次退出应用</string>
+    <string name="order1">订单:</string>
     <string name="orderdetails">订单详情</string>
     <string name="orderno">订单号</string>
     <string name="orderno1">订单号:</string>
@@ -1014,9 +1016,11 @@
     <string name="xie">卸</string>
     <string name="xie1">卸:</string>
     <string name="xiehuo">卸货</string>
+    <string name="xiehuozhaopian">卸货照片</string>
     <string name="xingshiguiji">行驶轨迹</string>
     <string name="xingshizheng_pic">行驶证照片</string>
     <string name="xingshizhenghaoma">行驶证号码</string>
+    <string name="yipaiche">已派车</string>
     <string name="yizhuanghuo">已装货(装货照片已审核)</string>
     <string name="youfeijiangli">*超出默认比例范围奖励邮费</string>
     <string name="youkahui">油卡惠:</string>
