@@ -57,7 +57,9 @@ public class OrderDetailsActivity extends BaseActivity {
     @ViewInject(R.id.tv_daodatime)
     TextView tv_daodatime;
     @ViewInject(R.id.tv_timexie)
-    TextView tv_timexie;
+    TextView tv_timexie; 
+    @ViewInject(R.id.tv_yjth)
+    TextView tv_yjth;
     @ViewInject(R.id.tv_name)
     TextView tv_name;
     @ViewInject(R.id.tv_beizhu)
@@ -191,17 +193,15 @@ public class OrderDetailsActivity extends BaseActivity {
         addressAdapter = new addressAdapter();
         address = new ArrayList<LoadpickEntity>();
         addresslistview.setAdapter(addressAdapter);
-
-
-
-
     }
 
     private void setData(OrderDetailsBaseBean baseBean) {
         tv_ordernum.setText(fsendcarno);
-        tv_timeti.setText(DateUtils.timedate(baseBean.getFactuptime()));
+        tv_timeti.setText(DateUtils.timedate(baseBean.getFpickuptime()));
         tv_timexie.setText(DateUtils.timedate(baseBean.getFpickuptime()));
         tv_daodatime.setText(DateUtils.timedate(baseBean.getFarrivetime()));
+        // TODO: 2018/1/4 预计提货时间 
+        tv_yjth.setText(DateUtils.timedate(baseBean.getPickuptime()));
         if (baseBean.getHttpTOrderGoodRes() != null && baseBean.getHttpTOrderGoodRes().size() > 0) {
             StringBuffer buffer = new StringBuffer();
             for (TOrderGoods goods : baseBean.getHttpTOrderGoodRes()) {
@@ -272,7 +272,6 @@ public class OrderDetailsActivity extends BaseActivity {
             @Override
             public void onSuccess(OrderDetailsBean baseBean) {
                 loadingDialog.dissDialog();
-                Log.d("===================",new Gson().toJson(baseBean));
                 if (baseBean.isSuccess()) {
                     setData(baseBean.getObj());
                 }
@@ -280,7 +279,6 @@ public class OrderDetailsActivity extends BaseActivity {
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 loadingDialog.dissDialog();
-                Log.d("3231313213",ex+"");
             }
         });
     }

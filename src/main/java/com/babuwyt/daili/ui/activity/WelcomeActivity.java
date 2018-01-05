@@ -1,14 +1,22 @@
 package com.babuwyt.daili.ui.activity;
 
+import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 
 import com.babuwyt.daili.R;
 import com.babuwyt.daili.base.BaseActivity;
 import com.babuwyt.daili.base.SessionManager;
+import com.babuwyt.daili.finals.Constants;
 import com.babuwyt.daili.finals.SharePrefKeys;
 import com.babuwyt.daili.utils.util.SharePreferencesUtils;
 
@@ -38,10 +46,23 @@ public class WelcomeActivity extends BaseActivity {
     }
 
     private void init(){
-        timeDown();
-
+        storageCard();
     }
 
+
+    //授权读写权限
+    private void storageCard(){
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                    Constants.MY_PERMISSIONS_REQUEST_READ);
+        }else {
+            timeDown();
+        }
+    }
 
     //两秒后页面切换
     private void timeDown(){
@@ -53,7 +74,35 @@ public class WelcomeActivity extends BaseActivity {
             }
         }, 2000);
     }
-
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode== Constants.MY_PERMISSIONS_REQUEST_READ){
+            if (grantResults.length>0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                timeDown();
+            }else {
+                AlertDialog.Builder builder=new AlertDialog.Builder(this);
+                builder.setMessage("您没有授权读写权限，程序将无法使用！\n 该权限为应用储存和读取SD卡照片使用。请前往设置授权后重新打开APP");
+                builder.setTitle("授权失败");
+                builder.setPositiveButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                        finish();
+                    }
+                });
+                builder.setNegativeButton("好", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent =  new Intent(Settings.ACTION_SETTINGS);
+                        startActivity(intent);
+                    }
+                });
+                builder.setCancelable(false);
+                builder.create().show();
+            }
+        }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
     /**
      * 判断是否需要进入登录页面
      */

@@ -18,17 +18,17 @@ public final class R {
     }
     public static final class id {
         public static final int ghost_view = 0x7f08007f;
-        public static final int italic = 0x7f080098;
-        public static final int normal = 0x7f0800d3;
-        public static final int parent_matrix = 0x7f0800e3;
-        public static final int save_image_matrix = 0x7f0800fa;
-        public static final int save_non_transition_alpha = 0x7f0800fb;
-        public static final int save_scale_type = 0x7f0800fc;
-        public static final int transition_current_scene = 0x7f08013c;
-        public static final int transition_layout_save = 0x7f08013d;
-        public static final int transition_position = 0x7f08013e;
-        public static final int transition_scene_layoutid_cache = 0x7f08013f;
-        public static final int transition_transform = 0x7f080140;
+        public static final int italic = 0x7f080099;
+        public static final int normal = 0x7f0800d4;
+        public static final int parent_matrix = 0x7f0800e4;
+        public static final int save_image_matrix = 0x7f0800fb;
+        public static final int save_non_transition_alpha = 0x7f0800fc;
+        public static final int save_scale_type = 0x7f0800fd;
+        public static final int transition_current_scene = 0x7f08013d;
+        public static final int transition_layout_save = 0x7f08013e;
+        public static final int transition_position = 0x7f08013f;
+        public static final int transition_scene_layoutid_cache = 0x7f080140;
+        public static final int transition_transform = 0x7f080141;
     }
     public static final class styleable {
         public static final int[] FontFamily = { 0x7f03008f, 0x7f030090, 0x7f030091, 0x7f030092 };

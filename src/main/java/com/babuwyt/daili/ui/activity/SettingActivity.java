@@ -20,6 +20,7 @@ import android.widget.TextView;
 import com.babuwyt.daili.R;
 import com.babuwyt.daili.base.BaseActivity;
 import com.babuwyt.daili.base.ClientApp;
+import com.babuwyt.daili.base.SessionManager;
 import com.babuwyt.daili.bean.VersionBean;
 import com.babuwyt.daili.entity.VersionEntity;
 import com.babuwyt.daili.finals.BaseURL;
@@ -122,43 +123,42 @@ public class SettingActivity extends BaseActivity {
     }
 
 
+    //版本检测
     private void getVersion() {
         ArrayList<String> list = new ArrayList<String>();
         list.add(3 + "");
-        loadingDialog.showDialog();
         XUtil.GetPing(BaseURL.CHECKVERSION, list, new MyCallBack<VersionBean>() {
             @Override
             public void onSuccess(VersionBean o) {
-                loadingDialog.dissDialog();
                 if (o.isSuccess()) {
                     setVersion(o.getObj());
                 }
-                UHelper.showToast(SettingActivity.this, o.getMsg());
             }
+
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
-                loadingDialog.dissDialog();
             }
         });
     }
+
     private void setVersion(final VersionEntity entity) {
-        String vsersionCode=UHelper.getAppVersionInfo(this,UHelper.TYPE_VERSION_CODE);
-        if (entity.getFversion()>Integer.parseInt(vsersionCode)){
-            AlertDialog.Builder builder=new AlertDialog.Builder(this);
-            builder.setTitle("发现新版本");
+        String vsersionCode = UHelper.getAppVersionInfo(this, UHelper.TYPE_VERSION_CODE);
+        if (entity.getFversion() > Integer.parseInt(vsersionCode)) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(getString(R.string.new_version));
             builder.setMessage(entity.getFupdateinfo());
-            builder.setPositiveButton("更新", new DialogInterface.OnClickListener() {
+            builder.setPositiveButton(getString(R.string.updata), new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     dialogInterface.dismiss();
                     DownLoadFile(entity.getFurl());
                 }
             });
-            if (entity.getFisforceupdate()){
+            if (entity.getFisforceupdate()) {
                 builder.setCancelable(false);
-            }else {
+            } else {
                 builder.setCancelable(true);
-                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                builder.setNegativeButton(getString(R.string.cancal), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         dialogInterface.dismiss();
@@ -175,13 +175,13 @@ public class SettingActivity extends BaseActivity {
      * 下载现版本APP
      */
     private File filepath;
+
     private void DownLoadFile(String url) {
-        UHelper.showToast(this,"下载apk");
         if (Environment.getExternalStorageState().equals(
                 Environment.MEDIA_MOUNTED)) {
             // 获取SD卡的目录
-            String path=Environment.getExternalStorageDirectory().getPath();
-            filepath = new File(path + File.separator + "apk" + File.separator + "Hehuoren.apk");//仅创建路径的File对象
+            String path = Environment.getExternalStorageDirectory().getPath();
+            filepath = new File(path + File.separator + "apkcd" + File.separator + "release.apk");//仅创建路径的File对象
             if (!filepath.exists()) {
                 filepath.mkdir();//如果路径不存在就先创建路径
             }
@@ -199,11 +199,13 @@ public class SettingActivity extends BaseActivity {
             public void Started() {
                 dialog.show();
             }
+
             @Override
             public void Success(File o) {
                 dialog.dismiss();
                 install(filepath);
             }
+
             @Override
             public void Loading(long total, long current, boolean isDownloading) {
                 dialog.setMax((int) total);
@@ -214,11 +216,12 @@ public class SettingActivity extends BaseActivity {
             public void onError(Throwable ex, boolean isOnCallback) {
                 super.onError(ex, isOnCallback);
                 dialog.dismiss();
-                Log.d("==ex==",ex+"");
             }
         });
 
     }
+
+
     private void install(File filePath) {
         File apkFile = filePath;
         Intent intent = new Intent(Intent.ACTION_VIEW);

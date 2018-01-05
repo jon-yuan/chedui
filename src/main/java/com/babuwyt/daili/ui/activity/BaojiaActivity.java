@@ -2,9 +2,12 @@ package com.babuwyt.daili.ui.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -29,6 +32,7 @@ import com.babuwyt.daili.utils.util.Arith;
 import com.babuwyt.daili.utils.util.InputMoney;
 import com.babuwyt.daili.utils.util.UHelper;
 import com.babuwyt.daili.utils.util.XUtil;
+import com.bigkoo.pickerview.TimePickerView;
 import com.google.gson.Gson;
 
 import org.xutils.view.annotation.ContentView;
@@ -36,6 +40,7 @@ import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -145,26 +150,46 @@ public class BaojiaActivity extends BaseActivity {
                     UHelper.showToast(this,getString(R.string.please_input_baojia));
                     return;
                 }
-                PromptDialog dialog = new PromptDialog(this);
-                dialog.setTitle(getString(R.string.prompt));
-                dialog.setMsg(getString(R.string.maketrue_paiche));
-                dialog.setCanceledTouchOutside(true);
-                dialog.setOnClick1(getString(R.string.cancal), new PromptDialog.Btn1OnClick() {
-                    @Override
-                    public void onClick() {
-                    }
-                });
-                dialog.setOnClick2(getString(R.string.ok), new PromptDialog.Btn2OnClick() {
-                    @Override
-                    public void onClick() {
-                        getCommit();
-                    }
-                });
-                dialog.create();
-                dialog.showDialog();
+                showTimeSelect();
                 break;
         }
     }
+    private void showTimeSelect(){
+        TimePickerView pvTime = new TimePickerView.Builder(this, new TimePickerView.OnTimeSelectListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
+            @Override
+            public void onTimeSelect(Date date, View v) {//选中事件回调
+                SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                String fpickuptimestr=simpleDateFormat.format(date);
+                prompt(fpickuptimestr);
+            }
+        }).setType(new boolean[]{true, true, true, true, true, false})// 默认全部显示
+                .setLabel("年","月","日","时","分","秒")//默认设置为年月日时分秒
+                .build();
+        pvTime.show();
+    }
+
+    //提示弹窗
+    private void prompt(final String fpickuptimestr){
+        PromptDialog dialog = new PromptDialog(this);
+        dialog.setTitle(getString(R.string.prompt));
+        dialog.setMsg(getString(R.string.maketrue_paiche));
+        dialog.setCanceledTouchOutside(true);
+        dialog.setOnClick1(getString(R.string.cancal), new PromptDialog.Btn1OnClick() {
+            @Override
+            public void onClick() {
+            }
+        });
+        dialog.setOnClick2(getString(R.string.ok), new PromptDialog.Btn2OnClick() {
+            @Override
+            public void onClick() {
+                getCommit(fpickuptimestr);
+            }
+        });
+        dialog.create();
+        dialog.showDialog();
+    }
+
 
     private void showInput(final TextView textView, final int type, String text, String title) {
         InPutDialog dialog = new InPutDialog(this);
@@ -391,7 +416,7 @@ public class BaojiaActivity extends BaseActivity {
             tv_y1.setText(Double.parseDouble(Arith.sub(YK, tv_y2.getText().toString().trim()))==0?"0":String.valueOf(Double.parseDouble(Arith.sub(YK, tv_y2.getText().toString().trim()))));
         }
     }
-    private void getCommit() {
+    private void getCommit(String fpickuptimestr) {
 
         Map<String,Object> map=new HashMap<String, Object>();
         map.put("ftruckid",ftruckid);
@@ -399,6 +424,7 @@ public class BaojiaActivity extends BaseActivity {
         map.put("ffmanageid",ffmanageid);//副司机
         map.put("userid", SessionManager.getInstance().getUser().getFid());
         map.put("fid", fid);
+        map.put("fpickuptimestr", fpickuptimestr);
         map.put("ffreight", tv_baojia.getText().toString().trim());//报价
         map.put("fkouchu", tv_kouchu.getText().toString().trim());//扣除
         map.put("freight", tv_xianjinjine.getText().toString().trim());//现金
@@ -410,7 +436,6 @@ public class BaojiaActivity extends BaseActivity {
         map.put("foilcardrecharge2", tv_y2.getText().toString().trim());//第二次油卡
         map.put("fgiveoilcardValue", tv_jiangli.getText().toString().trim());//奖励
         map.put("facceptratio", mYKH);//油卡比例
-        Log.d("==参数=",new Gson().toJson(map));
         loadingDialog.showDialog();
         XUtil.PostJsonObj(BaseURL.PUBLISHSENDCAR,map, new MyCallBack<BaseBean>() {
             @Override

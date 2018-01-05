@@ -10,16 +10,12 @@ import java.io.File;
 
 public abstract class MyProgressCallBack<ResultType> implements Callback.ProgressCallback<ResultType>{
 
+
     @Override
     public void onSuccess(ResultType result) {
         //根据公司业务需求，处理相应业务逻辑
+        Success(result);
     }
-
-    public abstract void Started();
-
-    public abstract void Success(File o);
-
-    public abstract void Loading(long total, long current, boolean isDownloading);
 
     @Override
     public void onError(Throwable ex, boolean isOnCallback) {
@@ -43,12 +39,17 @@ public abstract class MyProgressCallBack<ResultType> implements Callback.Progres
 
     @Override
     public void onStarted() {
-
+        Started();
     }
 
     @Override
     public void onLoading(long total, long current, boolean isDownloading) {
-
+        Loading(total,current,isDownloading);
     }
+
+
+    public abstract void Started();
+    public abstract void Success(ResultType resultType);
+    public abstract void Loading(long total, long current, boolean isDownloading);
 
 }

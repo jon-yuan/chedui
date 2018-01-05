@@ -165,12 +165,41 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minWidth="100dp"
-                    android:text="@string/yujidaodashijian"
+                    android:text="@string/jihuadaodashijian1"
                     android:textColor="@color/black_333"
                     android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/tv_daodatime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:minLines="1"
+                    android:text=""
+                    android:textColor="@color/black_333"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:text="@string/yujitihuoshijian"
+                    android:textColor="@color/black_333"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_yjth"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

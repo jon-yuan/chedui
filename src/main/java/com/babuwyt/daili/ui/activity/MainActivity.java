@@ -114,6 +114,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
         doSthRefresh();
         getNum();
         getVersion();
+//        DownLoadFile("http://app-1253538594.cosgz.myqcloud.com/app/chedui-release.apk");
     }
 
     /**
@@ -423,24 +424,25 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
                 Environment.MEDIA_MOUNTED)) {
             // 获取SD卡的目录
             String path=Environment.getExternalStorageDirectory().getPath();
-            filepath = new File(path + File.separator + "apk" + File.separator + "chedui.apk");//仅创建路径的File对象
+            filepath = new File(path + File.separator + "apkcd" + File.separator + "release.apk");//仅创建路径的File对象
             if (!filepath.exists()) {
                 filepath.mkdir();//如果路径不存在就先创建路径
             }
         }
+
         // 准备进度条Progress弹窗
         final ProgressDialog dialog = new ProgressDialog(this);
         dialog.setCancelable(true);// 设置是否可以通过点击Back键取消
-        dialog.setTitle("下载中...");
         //Progress弹窗设置为水平进度条
+        dialog.setTitle("下载中...");
         dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);// 设置水平进度条
-
         //"http://acj3.pc6.com/pc6_soure/2017-8/me.ele_190.apk"
         XUtil.DownLoadFile(url, filepath.getPath().toString(), new MyProgressCallBack<File>() {
             @Override
             public void Started() {
                 dialog.show();
             }
+
             @Override
             public void Success(File o) {
                 dialog.dismiss();
@@ -458,6 +460,7 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
                 dialog.dismiss();
             }
         });
+
 
     }
     private void install(File filePath) {

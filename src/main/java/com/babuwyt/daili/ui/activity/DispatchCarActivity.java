@@ -1,9 +1,13 @@
 package com.babuwyt.daili.ui.activity;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Log;
@@ -27,8 +31,10 @@ import com.babuwyt.daili.entity.YundanDetailsEntity;
 import com.babuwyt.daili.finals.BaseURL;
 import com.babuwyt.daili.inteface.MyCallBack;
 import com.babuwyt.daili.ui.views.CustomListView;
+import com.babuwyt.daili.ui.views.PromptDialog;
 import com.babuwyt.daili.utils.util.UHelper;
 import com.babuwyt.daili.utils.util.XUtil;
+import com.bigkoo.pickerview.TimePickerView;
 import com.google.gson.Gson;
 
 import org.xutils.http.RequestParams;
@@ -38,12 +44,14 @@ import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by lenovo on 2017/12/27.
  */
+@SuppressLint("NewApi")
 @ContentView(R.layout.activity_dispatchcar)
 public class DispatchCarActivity extends BaseActivity {
     @ViewInject(R.id.toolbar)
@@ -200,25 +208,53 @@ public class DispatchCarActivity extends BaseActivity {
             startActivity(intent);
         } else if (list.get(0).getFispay() == 3) {
             //非结算司机
-            getCommit();
-
-//            Intent intent=new Intent(this,BaojiaActivity.class);
-//            intent.putExtra("ftruckid",list.get(0).getCarid());
-//            intent.putExtra("fmanageid",list.get(0).getFdriverid());
-//            intent.putExtra("ffmanagfeid",list.get(1).getFdriverid());
-//            intent.putExtra("fid", fid);
-//            startActivity(intent);
+            showTimeSelect();
         }
     }
+    private void showTimeSelect(){
+        TimePickerView pvTime = new TimePickerView.Builder(this, new TimePickerView.OnTimeSelectListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
+            @Override
+            public void onTimeSelect(Date date, View v) {//选中事件回调
+                SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                String fpickuptimestr=simpleDateFormat.format(date);
+                prompt(fpickuptimestr);
+            }
+        }).setType(new boolean[]{true, true, true, true, true, false})// 默认全部显示
+                .setLabel("年","月","日","时","分","秒")//默认设置为年月日时分秒
+                .build();
+        pvTime.show();
+    }
 
+    //提示弹窗
+    private void prompt(final String fpickuptimestr){
+        PromptDialog dialog = new PromptDialog(this);
+        dialog.setTitle(getString(R.string.prompt));
+        dialog.setMsg(getString(R.string.maketrue_paiche));
+        dialog.setCanceledTouchOutside(true);
+        dialog.setOnClick1(getString(R.string.cancal), new PromptDialog.Btn1OnClick() {
+            @Override
+            public void onClick() {
+            }
+        });
+        dialog.setOnClick2(getString(R.string.ok), new PromptDialog.Btn2OnClick() {
+            @Override
+            public void onClick() {
+                getCommit(fpickuptimestr);
+            }
+        });
+        dialog.create();
+        dialog.showDialog();
+    }
 
-    private void getCommit() {
+    private void getCommit(String str) {
         Map<String,Object> map=new HashMap<String, Object>();
         map.put("ftruckid",list.get(0).getCarid());
         map.put("fmanageid",list.get(0).getFdriverid());//主司机
         map.put("ffmanageid",list.get(1).getFdriverid());//副司机
         map.put("userid", SessionManager.getInstance().getUser().getFid());
         map.put("fid", fid);
+        map.put("fpickuptimestr", str);
 
         map.put("ffreight", 0);//报价
         map.put("fkouchu", 0);//扣除
@@ -231,7 +267,6 @@ public class DispatchCarActivity extends BaseActivity {
         map.put("foilcardrecharge2", 0);//第二次油卡
         map.put("fgiveoilcardValue", 0);//奖励
         map.put("facceptratio", 0);//油卡比例
-        Log.d("==参数=",new Gson().toJson(map));
         loadingDialog.showDialog();
         XUtil.PostJsonObj(BaseURL.PUBLISHSENDCAR,map, new MyCallBack<BaseBean>() {
             @Override

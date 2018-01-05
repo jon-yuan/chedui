@@ -69,7 +69,6 @@
             android:name=".ui.activity.LoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"/>
-        android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.DispatchCarActivity"
             android:launchMode="singleTop"

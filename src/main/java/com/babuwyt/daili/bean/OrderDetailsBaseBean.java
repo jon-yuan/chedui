@@ -20,14 +20,40 @@ public class OrderDetailsBaseBean {
     private long factuptime;
     private int ftaskState;
     private long farrivetime;
+    private long pickuptime;
     private String fRemark;
+    private String fpickuptimestr;
     private ArrayList<LoadpickEntity> loadpick;
     private ArrayList<pictureEntity> picturelist;
     private ArrayList<Tworktrack> worktrack;
     private ArrayList<TOrderGoods> httpTOrderGoodRes;
 
+    public long getPickuptime() {
+        return pickuptime;
+    }
+
+    public void setPickuptime(long pickuptime) {
+        this.pickuptime = pickuptime;
+    }
+
     public String getFremark() {
         return fRemark;
+    }
+
+    public String getfRemark() {
+        return fRemark;
+    }
+
+    public String getFpickuptimestr() {
+        return fpickuptimestr;
+    }
+
+    public void setFpickuptimestr(String fpickuptimestr) {
+        this.fpickuptimestr = fpickuptimestr;
+    }
+
+    public void setfRemark(String fRemark) {
+        this.fRemark = fRemark;
     }
 
     public void setFremark(String fremark) {

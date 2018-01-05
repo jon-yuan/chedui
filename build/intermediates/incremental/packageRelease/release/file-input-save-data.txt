@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jan 03 10:32:14 CST 2018
+#Fri Jan 05 13:41:32 CST 2018
 56.path=lib/mips64/libjcore117.so
 5.base=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\stripDebugSymbol\\release\\0
 42.base=E\:\\git_resource\\chedui\\build\\intermediates\\transforms\\stripDebugSymbol\\release\\0
