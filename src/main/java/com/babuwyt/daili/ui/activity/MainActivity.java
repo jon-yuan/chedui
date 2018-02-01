@@ -189,12 +189,10 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
         ArrayList<String> list = new ArrayList<String>();
         list.add(pageNum + "");
         list.add(SessionManager.getInstance().getUser().getFid());
-        loadingDialog.showDialog();
         XUtil.GetPing(BaseURL.SELECTPAGE, list, new MyCallBack<MainBean>() {
             @Override
             public void onSuccess(MainBean result) {
                 super.onSuccess(result);
-                loadingDialog.dissDialog();
                 mDatas.clear();
                 if (result.isSuccess()) {
                     if (mDatas != null) {
@@ -210,7 +208,6 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 super.onError(ex, isOnCallback);
-                loadingDialog.dissDialog();
                 springview.onFinishFreshAndLoad();
             }
         });
@@ -420,14 +417,17 @@ public class MainActivity extends BaseActivity implements MainAdapterCallBack {
      */
     private File filepath;
     private void DownLoadFile(String url) {
+
+        final String fileName = "chedui.apk";
         if (Environment.getExternalStorageState().equals(
                 Environment.MEDIA_MOUNTED)) {
             // 获取SD卡的目录
-            String path=Environment.getExternalStorageDirectory().getPath();
-            filepath = new File(path + File.separator + "apkcd" + File.separator + "release.apk");//仅创建路径的File对象
-            if (!filepath.exists()) {
-                filepath.mkdir();//如果路径不存在就先创建路径
+            String path=Environment.getExternalStorageDirectory().getPath()+ File.separator + "apk" + File.separator;
+            File file1=new File(path);
+            if (!file1.exists()){
+                file1.mkdir();
             }
+            filepath=new File(path+fileName);
         }
 
         // 准备进度条Progress弹窗

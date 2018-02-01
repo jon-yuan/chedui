@@ -3,17 +3,16 @@ package com.babuwyt.daili.ui.activity;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.babuwyt.daili.R;
 import com.babuwyt.daili.adapter.DispatchCarAdapter;
@@ -24,7 +23,6 @@ import com.babuwyt.daili.base.SessionManager;
 import com.babuwyt.daili.bean.YundanDetailsBean;
 import com.babuwyt.daili.entity.LoadpickEntity;
 import com.babuwyt.daili.entity.SijiEntity;
-import com.babuwyt.daili.entity.SystemPramer;
 import com.babuwyt.daili.entity.TOrderGoodsEntity;
 import com.babuwyt.daili.entity.YunDanDetailsgoodinfoEntity;
 import com.babuwyt.daili.entity.YundanDetailsEntity;
@@ -35,14 +33,13 @@ import com.babuwyt.daili.ui.views.PromptDialog;
 import com.babuwyt.daili.utils.util.UHelper;
 import com.babuwyt.daili.utils.util.XUtil;
 import com.bigkoo.pickerview.TimePickerView;
-import com.google.gson.Gson;
+import com.yanzhenjie.recyclerview.swipe.SwipeSwitch;
 
-import org.xutils.http.RequestParams;
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
-import org.xutils.x;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -96,7 +93,8 @@ public class DispatchCarActivity extends BaseActivity {
     private DispatchSelectSijiAdapter adapter;
     private ArrayList<SijiEntity> list;
     private YundanDetailsEntity entity;
-
+//    private TextView mTvContent, mBtnRight;
+//    private SwipeSwitch mSwipeSwitch;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -156,6 +154,18 @@ public class DispatchCarActivity extends BaseActivity {
                 adapter.notifyDataSetChanged();
             }
         });
+
+//
+//        mSwipeSwitch = (SwipeSwitch) findViewById(R.id.swipe_layout);
+//        mTvContent = (TextView) findViewById(R.id.content_view);
+//        mBtnRight = (TextView) findViewById(R.id.right_view);
+//        mBtnRight.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                mSwipeSwitch.smoothCloseMenu();// 关闭菜单。
+//                Toast.makeText(DispatchCarActivity.this, "我是右面的", Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 
     @Override

@@ -107,7 +107,7 @@ public class BaseURL {
     /**
      *根据车牌号查询当前车辆位置
      * */
-    public static final String GET_LOCATIONIN_APP = BASE_URL + "appcommon/getLocationInApp";
+    public static final String GET_LOCATIONIN_APP = BASE_URL + "appcommon/getlocation/truckNo";
     /**
      * 获取订单  人员等数量
      */

@@ -2,7 +2,6 @@ package com.babuwyt.daili.ui.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.icu.text.SimpleDateFormat;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -39,6 +38,7 @@ import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;

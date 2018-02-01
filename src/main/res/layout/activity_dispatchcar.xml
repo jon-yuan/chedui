@@ -257,7 +257,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
-                        android:text="一提一卸"
+                        android:text=""
                         android:textColor="@color/black_333"
                         android:textSize="12sp" />
 
@@ -281,7 +281,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
-                        android:text="205KG"
+                        android:text=""
                         android:textColor="@color/black_333"
                         android:textSize="12sp" />
 
@@ -315,7 +315,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
-                        android:text="18件"
+                        android:text=""
                         android:textColor="@color/black_333"
                         android:textSize="12sp" />
 
@@ -339,7 +339,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
-                        android:text="250m³"
+                        android:text=""
                         android:textColor="@color/black_333"
                         android:textSize="12sp" />
 
@@ -372,7 +372,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
-                        android:text="托"
+                        android:text=""
                         android:textColor="@color/black_333"
                         android:textSize="12sp" />
 
@@ -396,7 +396,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
-                        android:text="18托"
+                        android:text=""
                         android:textColor="@color/black_333"
                         android:textSize="12sp" />
 
@@ -427,6 +427,30 @@
                     android:text="@string/next"
                     android:gravity="center"
                     android:background="@drawable/background_blue_image_shape"/>
+
+            <!--<com.yanzhenjie.recyclerview.swipe.SwipeMenuLayout-->
+                <!--xmlns:swipe="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/swipe_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:clickable="true"-->
+                <!--swipe:contentViewId="@+id/content_view"-->
+                <!--swipe:rightViewId="@+id/right_view">-->
+
+                <!--<TextView-->
+                    <!--android:id="@id/content_view"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="我不是RecyclerViw，你左右滑我看看，有惊喜喔。"-->
+                    <!--android:textSize="16sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@id/right_view"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:text="右面Button" />-->
+            <!--</com.yanzhenjie.recyclerview.swipe.SwipeMenuLayout>-->
 
         </LinearLayout>
     </ScrollView>

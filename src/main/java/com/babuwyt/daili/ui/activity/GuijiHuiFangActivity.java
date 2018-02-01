@@ -187,7 +187,7 @@ public class GuijiHuiFangActivity extends BaseActivity {
     }
 
     private void start() {
-//        smoothMarker.getMarker().showInfoWindow();
+        smoothMarker.getMarker().showInfoWindow();
         smoothMarker.startSmoothMove();
         ismoving = 1;
         btn_bofang_zanting.setImageResource(R.drawable.icon_zanting);

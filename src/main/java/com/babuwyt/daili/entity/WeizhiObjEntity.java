@@ -55,4 +55,34 @@ public class WeizhiObjEntity {
     public void setGps(WeizhiEntity gps) {
         this.gps = gps;
     }
+
+
+
+    private String status;
+    private String state;
+    private BeidouResult result;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public BeidouResult getResult() {
+        return result;
+    }
+
+    public void setResult(BeidouResult result) {
+        this.result = result;
+    }
 }

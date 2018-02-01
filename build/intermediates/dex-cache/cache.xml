@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-swipe-1.1.4.aar\f4d7a43a137c0c4b7cbfebad60697378\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e9d87f53023122b88ffad6530615b3579606ab02">
+        <dex dex="E:\git_resource\chedui\build\intermediates\transforms\preDex\release\32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.6.aar\b510e0e9235b900e7311409a7a96c2dd\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e39dd45427d2ba136c82ed1946f80dd3dff16695">
+        <dex dex="E:\git_resource\chedui\build\intermediates\transforms\preDex\release\30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\loading-1.0.2.aar\498459560b81e00c44ccd4169e5e45ea\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="256089651e34273f719c1b4cd5683b9a309b5ba8">
+        <dex dex="E:\git_resource\chedui\build\intermediates\transforms\preDex\release\31.jar" />
+    </item>
+
+</items>

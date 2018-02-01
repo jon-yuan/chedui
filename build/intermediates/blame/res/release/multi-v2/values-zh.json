@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\git_resource\\chedui\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\loading-1.0.2.aar\\498459560b81e00c44ccd4169e5e45ea\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\recyclerview-swipe-1.1.4.aar\\f4d7a43a137c0c4b7cbfebad60697378\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,121,182,248,322",
+                        "endColumns": "65,60,65,73,59",
+                        "endOffsets": "116,177,243,317,377"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "113,179,240,306,380",
+                        "endColumns": "65,60,65,73,59",
+                        "endOffsets": "174,235,301,375,435"
+                    }
+                }
+            ]
+        }
+    ]
+}

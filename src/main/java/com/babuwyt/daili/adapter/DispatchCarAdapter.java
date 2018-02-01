@@ -68,7 +68,7 @@ public class DispatchCarAdapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
         holder.linman.setText(mList.get(i).getFlinkman());
-        holder.address.setText(mList.get(i).getFaddress());
+        holder.address.setText(mList.get(i).getSsq()+mList.get(i).getFaddress());
         if (mList.get(i).getFseq()==1){
             holder.tv_fseq.setText(mContext.getString(R.string.zhuang1));
         }else {

@@ -130,6 +130,8 @@ public class WeiZhiActivity extends BaseActivity {
                     marker.setObject(res);
                     mapUtil.moveMapCenter(new LatLng(result.getEntity().getGps().getWgLat(), result.getEntity().getGps().getWgLon()));
                     marker.showInfoWindow();
+
+
                 }else {
                     UHelper.showToast(WeiZhiActivity.this,result.getMsg());
                 }

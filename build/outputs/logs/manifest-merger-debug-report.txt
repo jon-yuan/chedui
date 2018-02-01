@@ -6,22 +6,25 @@ INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-304:12
 INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-304:12
 MERGED from [com.contrarywind:Android-PickerView:3.2.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\Android-PickerView-3.2.6.aar\e590b5407cf2801b6e8080a89a5b4204\AndroidManifest.xml:2:1-11:12
 MERGED from [com.liaoinstan.springview:library:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\library-1.3.0.aar\c178a6457cbf6f18868405da3efa8bcc\AndroidManifest.xml:2:1-17:12
+MERGED from [com.yanzhenjie:recyclerview-swipe:1.1.4] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-swipe-1.1.4.aar\f4d7a43a137c0c4b7cbfebad60697378\AndroidManifest.xml:17:1-25:12
 MERGED from [cn.bingoogolapple:bga-refreshlayout:1.1.7] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\bga-refreshlayout-1.1.7.aar\3eeed1d43659b3bf6a8c699ca0f00b88\AndroidManifest.xml:2:1-10:12
 MERGED from [com.android.support:design:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\design-26.0.0-beta1.aar\c999eba3eb841110b7a2cd21e0f734bc\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\0e772c60e64d5d34b029ca9a3943a72e\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\02a5dcf8334e01f558aa64ab23675da3\AndroidManifest.xml:2:1-11:12
 MERGED from [org.xutils:xutils:3.5.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\xutils-3.5.0.aar\88c8357fcd8337061471dec66b0315f1\AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.chrisbanes:PhotoView:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.6.aar\b510e0e9235b900e7311409a7a96c2dd\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:17:1-28:12
+MERGED from [com.yanzhenjie:loading:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\loading-1.0.2.aar\498459560b81e00c44ccd4169e5e45ea\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.databinding:adapters:1.2.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\adapters-1.2.1.aar\260bbcada990ec8f2b9704bd81b8245b\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.databinding:library:1.2.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\library-1.2.1.aar\bfa8fd3fda1cb5c4b9a75ffaf0a51d64\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:transition:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-beta1.aar\5c61c9623d72fa92caab80946e9a6bd8\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\18a02ad65fe9c76481f5c19f59e77610\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\04f3dc85bcca6fa6b5925fa0fb33bcde\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\97a5c508b51f0e318a6e58abdb2426dc\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\dd976921a2b4002ba13ab0cc820aea90\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\b5b673b562be7c45643d9abfceb584e6\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\c34a011e9f6bdaf4dc9ff54273480cb5\AndroidManifest.xml:17:1-31:12
 INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-304:12
 INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml:2:1-304:12
@@ -146,6 +149,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\le
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\02a5dcf8334e01f558aa64ab23675da3\AndroidManifest.xml:9:5-20
 MERGED from [org.xutils:xutils:3.5.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\xutils-3.5.0.aar\88c8357fcd8337061471dec66b0315f1\AndroidManifest.xml:12:5-20
 MERGED from [org.xutils:xutils:3.5.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\xutils-3.5.0.aar\88c8357fcd8337061471dec66b0315f1\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-beta1.aar\5c61c9623d72fa92caab80946e9a6bd8\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-beta1.aar\5c61c9623d72fa92caab80946e9a6bd8\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\18a02ad65fe9c76481f5c19f59e77610\AndroidManifest.xml:25:5-29:19
@@ -154,16 +159,14 @@ MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\04f3dc85bcca6fa6b5925fa0fb33bcde\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\97a5c508b51f0e318a6e58abdb2426dc\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\97a5c508b51f0e318a6e58abdb2426dc\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\dd976921a2b4002ba13ab0cc820aea90\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\dd976921a2b4002ba13ab0cc820aea90\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\b5b673b562be7c45643d9abfceb584e6\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\b5b673b562be7c45643d9abfceb584e6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\c34a011e9f6bdaf4dc9ff54273480cb5\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\c34a011e9f6bdaf4dc9ff54273480cb5\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
@@ -634,6 +637,8 @@ MERGED from [com.contrarywind:Android-PickerView:3.2.6] C:\Users\lenovo\.gradle\
 MERGED from [com.contrarywind:Android-PickerView:3.2.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\Android-PickerView-3.2.6.aar\e590b5407cf2801b6e8080a89a5b4204\AndroidManifest.xml:7:5-9:41
 MERGED from [com.liaoinstan.springview:library:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\library-1.3.0.aar\c178a6457cbf6f18868405da3efa8bcc\AndroidManifest.xml:7:5-9:41
 MERGED from [com.liaoinstan.springview:library:1.3.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\library-1.3.0.aar\c178a6457cbf6f18868405da3efa8bcc\AndroidManifest.xml:7:5-9:41
+MERGED from [com.yanzhenjie:recyclerview-swipe:1.1.4] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-swipe-1.1.4.aar\f4d7a43a137c0c4b7cbfebad60697378\AndroidManifest.xml:21:5-23:41
+MERGED from [com.yanzhenjie:recyclerview-swipe:1.1.4] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-swipe-1.1.4.aar\f4d7a43a137c0c4b7cbfebad60697378\AndroidManifest.xml:21:5-23:41
 MERGED from [cn.bingoogolapple:bga-refreshlayout:1.1.7] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\bga-refreshlayout-1.1.7.aar\3eeed1d43659b3bf6a8c699ca0f00b88\AndroidManifest.xml:6:5-8:41
 MERGED from [cn.bingoogolapple:bga-refreshlayout:1.1.7] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\bga-refreshlayout-1.1.7.aar\3eeed1d43659b3bf6a8c699ca0f00b88\AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.support:design:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\design-26.0.0-beta1.aar\c999eba3eb841110b7a2cd21e0f734bc\AndroidManifest.xml:21:5-23:62
@@ -644,6 +649,12 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\le
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\02a5dcf8334e01f558aa64ab23675da3\AndroidManifest.xml:5:5-7:41
 MERGED from [org.xutils:xutils:3.5.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\xutils-3.5.0.aar\88c8357fcd8337061471dec66b0315f1\AndroidManifest.xml:8:5-10:41
 MERGED from [org.xutils:xutils:3.5.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\xutils-3.5.0.aar\88c8357fcd8337061471dec66b0315f1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.chrisbanes:PhotoView:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.6.aar\b510e0e9235b900e7311409a7a96c2dd\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.chrisbanes:PhotoView:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\PhotoView-1.2.6.aar\b510e0e9235b900e7311409a7a96c2dd\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:20:5-44
+MERGED from [com.yanzhenjie:loading:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\loading-1.0.2.aar\498459560b81e00c44ccd4169e5e45ea\AndroidManifest.xml:21:5-23:41
+MERGED from [com.yanzhenjie:loading:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\loading-1.0.2.aar\498459560b81e00c44ccd4169e5e45ea\AndroidManifest.xml:21:5-23:41
 MERGED from [com.android.databinding:adapters:1.2.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\adapters-1.2.1.aar\260bbcada990ec8f2b9704bd81b8245b\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.databinding:adapters:1.2.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\adapters-1.2.1.aar\260bbcada990ec8f2b9704bd81b8245b\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.databinding:library:1.2.1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\library-1.2.1.aar\bfa8fd3fda1cb5c4b9a75ffaf0a51d64\AndroidManifest.xml:22:5-24:41
@@ -656,16 +667,14 @@ MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\04f3dc85bcca6fa6b5925fa0fb33bcde\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\97a5c508b51f0e318a6e58abdb2426dc\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\97a5c508b51f0e318a6e58abdb2426dc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\dd976921a2b4002ba13ab0cc820aea90\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\dd976921a2b4002ba13ab0cc820aea90\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\b5b673b562be7c45643d9abfceb584e6\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\b5b673b562be7c45643d9abfceb584e6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\c34a011e9f6bdaf4dc9ff54273480cb5\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\c34a011e9f6bdaf4dc9ff54273480cb5\AndroidManifest.xml:21:5-23:58
 INJECTED from E:\git_resource\chedui\src\main\AndroidManifest.xml
@@ -684,6 +693,8 @@ meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\design-26.0.0-beta1.aar\c999eba3eb841110b7a2cd21e0f734bc\AndroidManifest.xml:26:9-28:44
 MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\0e772c60e64d5d34b029ca9a3943a72e\AndroidManifest.xml:26:9-28:44
 MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\0e772c60e64d5d34b029ca9a3943a72e\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:23:9-25:44
 MERGED from [com.android.support:transition:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-beta1.aar\5c61c9623d72fa92caab80946e9a6bd8\AndroidManifest.xml:23:9-25:44
 MERGED from [com.android.support:transition:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-beta1.aar\5c61c9623d72fa92caab80946e9a6bd8\AndroidManifest.xml:23:9-25:44
 MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\18a02ad65fe9c76481f5c19f59e77610\AndroidManifest.xml:26:9-28:44
@@ -692,16 +703,14 @@ MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\04f3dc85bcca6fa6b5925fa0fb33bcde\AndroidManifest.xml:23:9-25:44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\97a5c508b51f0e318a6e58abdb2426dc\AndroidManifest.xml:23:9-25:44
 MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\97a5c508b51f0e318a6e58abdb2426dc\AndroidManifest.xml:23:9-25:44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:23:9-25:44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\46a8df849e9f5c07310b58c905104752\AndroidManifest.xml:23:9-25:44
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:26:9-28:44
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\dd976921a2b4002ba13ab0cc820aea90\AndroidManifest.xml:26:9-28:44
 MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\dd976921a2b4002ba13ab0cc820aea90\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\3dc72455be975e3e9495d82fd53ee8d7\AndroidManifest.xml:26:9-28:44
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\b5b673b562be7c45643d9abfceb584e6\AndroidManifest.xml:26:9-28:44
 MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\b5b673b562be7c45643d9abfceb584e6\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\045e04a59b67a9887dad14c36f15038d\AndroidManifest.xml:26:9-28:44
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\c34a011e9f6bdaf4dc9ff54273480cb5\AndroidManifest.xml:26:9-28:44
 MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\c34a011e9f6bdaf4dc9ff54273480cb5\AndroidManifest.xml:26:9-28:44
 	android:value

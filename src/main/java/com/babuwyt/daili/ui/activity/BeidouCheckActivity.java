@@ -18,8 +18,10 @@ import com.amap.api.maps2d.model.MarkerOptions;
 import com.babuwyt.daili.InfoWinAdapter;
 import com.babuwyt.daili.MapUtil;
 import com.babuwyt.daili.R;
+import com.babuwyt.daili.adapter.BeiDouApdater;
 import com.babuwyt.daili.base.BaseActivity;
 import com.babuwyt.daili.bean.WeizhiBean;
+import com.babuwyt.daili.entity.BeidouResult;
 import com.babuwyt.daili.entity.WeizhiObjEntity;
 import com.babuwyt.daili.finals.BaseURL;
 import com.babuwyt.daili.inteface.MyCallBack;
@@ -32,6 +34,8 @@ import org.xutils.view.annotation.Event;
 import org.xutils.view.annotation.ViewInject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by bbkj on 2017/12/8.
@@ -46,7 +50,7 @@ public class BeidouCheckActivity extends BaseActivity{
     EditText et_carno;
     @ViewInject(R.id.tv_search)
     TextView tv_search;
-    private InfoWinAdapter mAdapter;
+    private BeiDouApdater mAdapter;
     private AMap aMap;
     private MapUtil mapUtil;
     @Override
@@ -69,7 +73,7 @@ public class BeidouCheckActivity extends BaseActivity{
         aMap = mapView.getMap();
         aMap.setMapType(AMap.MAP_TYPE_NORMAL);// 卫星地图模式
 //
-        mAdapter=new InfoWinAdapter(this);
+        mAdapter=new BeiDouApdater(this);
         mapUtil=MapUtil.getInstance(this,aMap);
         mapUtil.setMapZoomTo(20);
         aMap.setInfoWindowAdapter(mAdapter);
@@ -109,30 +113,30 @@ public class BeidouCheckActivity extends BaseActivity{
     }
     //获取车辆位置
     private void getCarLocation(final String carNo){
-        ArrayList<String> list=new ArrayList<String>();
-        list.add(carNo);
+        Map<String,Object> map=new HashMap<String, Object>();
+        map.put("truckNo",carNo);
+        map.put("key","3");
         loadingDialog.showDialog();
-        XUtil.GetPing(BaseURL.GET_LOCATIONIN_APP,list,new MyCallBack<WeizhiBean>(){
+        XUtil.PostJsonObj(BaseURL.GET_LOCATIONIN_APP,map,new MyCallBack<WeizhiBean>(){
             @Override
             public void onSuccess(WeizhiBean result) {
                 super.onSuccess(result);
                 loadingDialog.dissDialog();
                 if (result.isSuccess()){
                     if (result.getEntity()!=null){
-                        WeizhiObjEntity entity=result.getEntity();
+                        BeidouResult entity=result.getEntity().getResult();
                         entity.setDrivename("");
+                        entity.setDrc(carNo);
                         double lat=0;
                         double lon=0;
-                        if (result.getEntity().getGps()!=null){
-                            lat=result.getEntity().getGps().getWgLat();
-                            lon=result.getEntity().getGps().getWgLon();
+                        if (result.getEntity().getResult()!=null){
+                            lat=result.getEntity().getResult().getLat();
+                            lon=result.getEntity().getResult().getLon();
                         }
                         Marker marker=addMarkerToMap(new LatLng(lat,lon ),"","");
                         marker.setObject(entity);
                         mapUtil.moveMapCenter(new LatLng(lat,lon));
                         marker.showInfoWindow();
-
-//                        mAdapter.setData(carNo,address);
                     }
                 }else {
                     UHelper.showToast(BeidouCheckActivity.this,result.getMsg());

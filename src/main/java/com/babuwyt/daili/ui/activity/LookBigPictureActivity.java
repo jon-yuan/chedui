@@ -24,6 +24,8 @@ import org.xutils.x;
 
 import java.util.ArrayList;
 
+import uk.co.senab.photoview.PhotoView;
+
 /**
  * Created by lenovo on 2017/11/29.
  */
@@ -54,12 +56,18 @@ public class LookBigPictureActivity extends BaseActivity {
         });
         vList=new ArrayList<View>();
         for (int i=0;i<mList.size();i++){
-            ImageView imageView=new ImageView(this);
-            imageView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-            x.image().bind(imageView, BaseURL.BASE_IMAGE_URI+mList.get(i).getFpicture(), XUtil.options(ImageView.ScaleType.FIT_CENTER));
-            vList.add(imageView);
-        }
+            PhotoView photoView=new PhotoView(this);
+            photoView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            x.image().bind(photoView, BaseURL.BASE_IMAGE_URI+mList.get(i).getFpicture(), XUtil.options(ImageView.ScaleType.FIT_CENTER));
+            vList.add(photoView);
 
+            photoView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    finish();
+                }
+            });
+        }
         bannerview.setViewList(vList);
         bannerview.setCurrentItem(index);
 

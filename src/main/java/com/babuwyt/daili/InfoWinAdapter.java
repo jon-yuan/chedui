@@ -3,6 +3,7 @@ package com.babuwyt.daili;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -11,14 +12,16 @@ import android.widget.TextView;
 import com.amap.api.maps2d.AMap;
 import com.amap.api.maps2d.model.LatLng;
 import com.amap.api.maps2d.model.Marker;
+import com.babuwyt.daili.entity.BeidouResult;
 import com.babuwyt.daili.entity.WeizhiObjEntity;
+import com.google.gson.Gson;
 
 
 /**
  * Created by Teprinciple on 2016/8/23.
  * 地图上自定义的infowindow的适配器
  */
-public class InfoWinAdapter implements AMap.InfoWindowAdapter, View.OnClickListener {
+public class InfoWinAdapter implements AMap.InfoWindowAdapter{
     private Context mContext;
     private LatLng latLng;
     private String agentName;
@@ -41,7 +44,6 @@ public class InfoWinAdapter implements AMap.InfoWindowAdapter, View.OnClickListe
     public View getInfoWindow(Marker marker) {
         WeizhiObjEntity res = (WeizhiObjEntity) marker.getObject();
         View view = initView();
-
         TVname=view.findViewById(R.id.name);
         carno=view.findViewById(R.id.carno);
         time=view.findViewById(R.id.time);
@@ -57,9 +59,7 @@ public class InfoWinAdapter implements AMap.InfoWindowAdapter, View.OnClickListe
         }else {
             layout_name.setVisibility(View.VISIBLE);
         }
-
         initData(marker);
-
         return view;
     }
     @Override
@@ -78,20 +78,5 @@ public class InfoWinAdapter implements AMap.InfoWindowAdapter, View.OnClickListe
         View view = LayoutInflater.from(mContext).inflate(R.layout.view_infowindow, null);
 
         return view;
-    }
-
-
-    @Override
-    public void onClick(View v) {
-        int id = v.getId();
-        switch (id){
-//            case R.id.navigation_LL:  //点击导航
-//                UHelper.showToast(mContext,"导航");
-//                break;
-//
-//            case R.id.call_LL:  //点击打电话
-//                UHelper.showToast(mContext,"电话");
-//                break;
-        }
     }
 }
